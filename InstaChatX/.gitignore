@@ -10,3 +10,4 @@ entityscanner-plug/dependency-reduced-pom.xml
 codereview.rc
 target
 bin
+project.properties
