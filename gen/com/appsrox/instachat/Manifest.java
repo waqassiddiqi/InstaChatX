@@ -7,18 +7,8 @@
 
 package com.appsrox.instachat;
 
-// TODO: Auto-generated Javadoc
-/**
- * The Class Manifest.
- */
 public final class Manifest {
-    
-    /**
-     * The Class permission.
-     */
     public static final class permission {
-        
-        /** The Constant C2D_MESSAGE. */
         public static final String C2D_MESSAGE="com.appsrox.instachat.permission.C2D_MESSAGE";
     }
 }

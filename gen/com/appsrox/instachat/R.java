@@ -7,57 +7,21 @@
 
 package com.appsrox.instachat;
 
-// TODO: Auto-generated Javadoc
-/**
- * The Class R.
- */
 public final class R {
-    
-    /**
-     * The Class anim.
-     */
     public static final class anim {
-        
-        /** The Constant abc_fade_in. */
         public static final int abc_fade_in=0x7f040000;
-        
-        /** The Constant abc_fade_out. */
         public static final int abc_fade_out=0x7f040001;
-        
-        /** The Constant abc_slide_in_bottom. */
         public static final int abc_slide_in_bottom=0x7f040002;
-        
-        /** The Constant abc_slide_in_top. */
         public static final int abc_slide_in_top=0x7f040003;
-        
-        /** The Constant abc_slide_out_bottom. */
         public static final int abc_slide_out_bottom=0x7f040004;
-        
-        /** The Constant abc_slide_out_top. */
         public static final int abc_slide_out_top=0x7f040005;
     }
-    
-    /**
-     * The Class array.
-     */
     public static final class array {
-        
-        /** The Constant pref_example_list_titles. */
         public static final int pref_example_list_titles=0x7f0d0000;
-        
-        /** The Constant pref_example_list_values. */
         public static final int pref_example_list_values=0x7f0d0001;
-        
-        /** The Constant pref_sync_frequency_titles. */
         public static final int pref_sync_frequency_titles=0x7f0d0002;
-        
-        /** The Constant pref_sync_frequency_values. */
         public static final int pref_sync_frequency_values=0x7f0d0003;
     }
-    
-    /**
-     * The Class attr.
-     */
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1196,16 +1160,8 @@ containing a value of this type.
          */
         public static final int zOrderOnTop=0x7f01007e;
     }
-    
-    /**
-     * The Class bool.
-     */
     public static final class bool {
-        
-        /** The Constant abc_action_bar_embed_tabs_pre_jb. */
         public static final int abc_action_bar_embed_tabs_pre_jb=0x7f070000;
-        
-        /** The Constant abc_action_bar_expanded_action_views_exclusive. */
         public static final int abc_action_bar_expanded_action_views_exclusive=0x7f070001;
         /**  Whether action menu items should be displayed in ALLCAPS or not.
          Defaults to true. If this is not appropriate for specific locales
@@ -1220,122 +1176,51 @@ containing a value of this type.
          extremely limited. 
          */
         public static final int abc_config_allowActionMenuItemTextWithIcon=0x7f070004;
-        
-        /** The Constant abc_config_showMenuShortcutsWhenKeyboardPresent. */
         public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f070003;
-        
-        /** The Constant abc_split_action_bar_is_narrow. */
         public static final int abc_split_action_bar_is_narrow=0x7f070002;
     }
-    
-    /**
-     * The Class color.
-     */
     public static final class color {
-        
-        /** The Constant abc_search_url_text_holo. */
         public static final int abc_search_url_text_holo=0x7f08001c;
-        
-        /** The Constant abc_search_url_text_normal. */
         public static final int abc_search_url_text_normal=0x7f080000;
-        
-        /** The Constant abc_search_url_text_pressed. */
         public static final int abc_search_url_text_pressed=0x7f080002;
-        
-        /** The Constant abc_search_url_text_selected. */
         public static final int abc_search_url_text_selected=0x7f080001;
-        
-        /** The Constant actionbar_color. */
         public static final int actionbar_color=0x7f08001b;
-        
-        /** The Constant common_action_bar_splitter. */
         public static final int common_action_bar_splitter=0x7f08000c;
-        
-        /**   Sign-in Button Colors. */
+        /**  Sign-in Button Colors 
+         */
         public static final int common_signin_btn_dark_text_default=0x7f080003;
-        
-        /** The Constant common_signin_btn_dark_text_disabled. */
         public static final int common_signin_btn_dark_text_disabled=0x7f080005;
-        
-        /** The Constant common_signin_btn_dark_text_focused. */
         public static final int common_signin_btn_dark_text_focused=0x7f080006;
-        
-        /** The Constant common_signin_btn_dark_text_pressed. */
         public static final int common_signin_btn_dark_text_pressed=0x7f080004;
-        
-        /** The Constant common_signin_btn_default_background. */
         public static final int common_signin_btn_default_background=0x7f08000b;
-        
-        /** The Constant common_signin_btn_light_text_default. */
         public static final int common_signin_btn_light_text_default=0x7f080007;
-        
-        /** The Constant common_signin_btn_light_text_disabled. */
         public static final int common_signin_btn_light_text_disabled=0x7f080009;
-        
-        /** The Constant common_signin_btn_light_text_focused. */
         public static final int common_signin_btn_light_text_focused=0x7f08000a;
-        
-        /** The Constant common_signin_btn_light_text_pressed. */
         public static final int common_signin_btn_light_text_pressed=0x7f080008;
-        
-        /** The Constant common_signin_btn_text_dark. */
         public static final int common_signin_btn_text_dark=0x7f08001d;
-        
-        /** The Constant common_signin_btn_text_light. */
         public static final int common_signin_btn_text_light=0x7f08001e;
-        
-        /** The Constant red_transparent. */
         public static final int red_transparent=0x7f08001a;
-        
-        /** The Constant wallet_bright_foreground_disabled_holo_light. */
         public static final int wallet_bright_foreground_disabled_holo_light=0x7f080012;
-        
-        /**            Wallet colors to support consistent Wallet fragment holo dark UI in client application          regardless of the theme and device type. */
+        /** 
+         Wallet colors to support consistent Wallet fragment holo dark UI in client application
+         regardless of the theme and device type
+    
+         */
         public static final int wallet_bright_foreground_holo_dark=0x7f08000d;
-        
-        /** The Constant wallet_bright_foreground_holo_light. */
         public static final int wallet_bright_foreground_holo_light=0x7f080013;
-        
-        /** The Constant wallet_dim_foreground_disabled_holo_dark. */
         public static final int wallet_dim_foreground_disabled_holo_dark=0x7f08000f;
-        
-        /** The Constant wallet_dim_foreground_holo_dark. */
         public static final int wallet_dim_foreground_holo_dark=0x7f08000e;
-        
-        /** The Constant wallet_dim_foreground_inverse_disabled_holo_dark. */
         public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f080011;
-        
-        /** The Constant wallet_dim_foreground_inverse_holo_dark. */
         public static final int wallet_dim_foreground_inverse_holo_dark=0x7f080010;
-        
-        /** The Constant wallet_highlighted_text_holo_dark. */
         public static final int wallet_highlighted_text_holo_dark=0x7f080017;
-        
-        /** The Constant wallet_highlighted_text_holo_light. */
         public static final int wallet_highlighted_text_holo_light=0x7f080016;
-        
-        /** The Constant wallet_hint_foreground_holo_dark. */
         public static final int wallet_hint_foreground_holo_dark=0x7f080015;
-        
-        /** The Constant wallet_hint_foreground_holo_light. */
         public static final int wallet_hint_foreground_holo_light=0x7f080014;
-        
-        /** The Constant wallet_holo_blue_light. */
         public static final int wallet_holo_blue_light=0x7f080018;
-        
-        /** The Constant wallet_link_text_light. */
         public static final int wallet_link_text_light=0x7f080019;
-        
-        /** The Constant wallet_primary_text_holo_light. */
         public static final int wallet_primary_text_holo_light=0x7f08001f;
-        
-        /** The Constant wallet_secondary_text_holo_dark. */
         public static final int wallet_secondary_text_holo_dark=0x7f080020;
     }
-    
-    /**
-     * The Class dimen.
-     */
     public static final class dimen {
         /**  Default height of an action bar. 
  Default height of an action bar. 
@@ -1351,31 +1236,50 @@ containing a value of this type.
  Vertical padding around action bar icons. 
          */
         public static final int abc_action_bar_icon_vertical_padding=0x7f090003;
-        
-        /**   Size of the indeterminate Progress Bar   Size of the indeterminate Progress Bar. */
+        /**  Size of the indeterminate Progress Bar 
+ Size of the indeterminate Progress Bar 
+         */
         public static final int abc_action_bar_progress_bar_size=0x7f09000a;
-        
-        /**   Maximum height for a stacked tab bar as part of an action bar. */
+        /**  Maximum height for a stacked tab bar as part of an action bar 
+         */
         public static final int abc_action_bar_stacked_max_height=0x7f090009;
         /**  Maximum width for a stacked action bar tab. This prevents
          action bar tabs from becoming too wide on a wide screen when only
          a few are present. 
          */
         public static final int abc_action_bar_stacked_tab_max_width=0x7f090001;
-        
-        /**   Bottom margin for action bar subtitles   Bottom margin for action bar subtitles   Bottom margin for action bar subtitles   Bottom margin for action bar subtitles   Bottom margin for action bar subtitles. */
+        /**  Bottom margin for action bar subtitles 
+ Bottom margin for action bar subtitles 
+ Bottom margin for action bar subtitles 
+ Bottom margin for action bar subtitles 
+ Bottom margin for action bar subtitles 
+         */
         public static final int abc_action_bar_subtitle_bottom_margin=0x7f090007;
-        
-        /**   Text size for action bar subtitles   Text size for action bar subtitles   Text size for action bar subtitles   Text size for action bar subtitles   Text size for action bar subtitles. */
+        /**  Text size for action bar subtitles 
+ Text size for action bar subtitles 
+ Text size for action bar subtitles 
+ Text size for action bar subtitles 
+ Text size for action bar subtitles 
+         */
         public static final int abc_action_bar_subtitle_text_size=0x7f090005;
-        
-        /**   Top margin for action bar subtitles   Top margin for action bar subtitles   Top margin for action bar subtitles   Top margin for action bar subtitles   Top margin for action bar subtitles. */
+        /**  Top margin for action bar subtitles 
+ Top margin for action bar subtitles 
+ Top margin for action bar subtitles 
+ Top margin for action bar subtitles 
+ Top margin for action bar subtitles 
+         */
         public static final int abc_action_bar_subtitle_top_margin=0x7f090006;
-        
-        /**   Text size for action bar titles   Text size for action bar titles   Text size for action bar titles   Text size for action bar titles   Text size for action bar titles. */
+        /**  Text size for action bar titles 
+ Text size for action bar titles 
+ Text size for action bar titles 
+ Text size for action bar titles 
+ Text size for action bar titles 
+         */
         public static final int abc_action_bar_title_text_size=0x7f090004;
-        
-        /**   Minimum width for an action button in the menu area of an action bar   Minimum width for an action button in the menu area of an action bar   Minimum width for an action button in the menu area of an action bar. */
+        /**  Minimum width for an action button in the menu area of an action bar 
+ Minimum width for an action button in the menu area of an action bar 
+ Minimum width for an action button in the menu area of an action bar 
+         */
         public static final int abc_action_button_min_width=0x7f090008;
         /**  The maximum width we would prefer dialogs to be.  0 if there is no
     maximum (let them grow as large as the screen).  Actual values are
@@ -1384,17 +1288,13 @@ containing a value of this type.
  see comment in values/config.xml 
          */
         public static final int abc_config_prefDialogWidth=0x7f090000;
-        
-        /**   Width of the icon in a dropdown list. */
+        /**  Width of the icon in a dropdown list 
+         */
         public static final int abc_dropdownitem_icon_width=0x7f090010;
-        
-        /**   Text padding for dropdown items. */
+        /**  Text padding for dropdown items 
+         */
         public static final int abc_dropdownitem_text_padding_left=0x7f09000e;
-        
-        /** The Constant abc_dropdownitem_text_padding_right. */
         public static final int abc_dropdownitem_text_padding_right=0x7f09000f;
-        
-        /** The Constant abc_panel_menu_list_width. */
         public static final int abc_panel_menu_list_width=0x7f09000b;
         /**  Preferred width of the search view. 
          */
@@ -1412,8 +1312,6 @@ containing a value of this type.
     
          */
         public static final int activity_horizontal_margin=0x7f090015;
-        
-        /** The Constant activity_vertical_margin. */
         public static final int activity_vertical_margin=0x7f090016;
         /**  The platform's desired fixed height for a dialog along the major axis
          (the screen is in portrait). This may be either a fraction or a dimension.
@@ -1448,745 +1346,251 @@ containing a value of this type.
          */
         public static final int dialog_fixed_width_minor=0x7f090012;
     }
-    
-    /**
-     * The Class drawable.
-     */
     public static final class drawable {
-        
-        /** The Constant abc_ab_bottom_solid_dark_holo. */
         public static final int abc_ab_bottom_solid_dark_holo=0x7f020000;
-        
-        /** The Constant abc_ab_bottom_solid_light_holo. */
         public static final int abc_ab_bottom_solid_light_holo=0x7f020001;
-        
-        /** The Constant abc_ab_bottom_transparent_dark_holo. */
         public static final int abc_ab_bottom_transparent_dark_holo=0x7f020002;
-        
-        /** The Constant abc_ab_bottom_transparent_light_holo. */
         public static final int abc_ab_bottom_transparent_light_holo=0x7f020003;
-        
-        /** The Constant abc_ab_share_pack_holo_dark. */
         public static final int abc_ab_share_pack_holo_dark=0x7f020004;
-        
-        /** The Constant abc_ab_share_pack_holo_light. */
         public static final int abc_ab_share_pack_holo_light=0x7f020005;
-        
-        /** The Constant abc_ab_solid_dark_holo. */
         public static final int abc_ab_solid_dark_holo=0x7f020006;
-        
-        /** The Constant abc_ab_solid_light_holo. */
         public static final int abc_ab_solid_light_holo=0x7f020007;
-        
-        /** The Constant abc_ab_stacked_solid_dark_holo. */
         public static final int abc_ab_stacked_solid_dark_holo=0x7f020008;
-        
-        /** The Constant abc_ab_stacked_solid_light_holo. */
         public static final int abc_ab_stacked_solid_light_holo=0x7f020009;
-        
-        /** The Constant abc_ab_stacked_transparent_dark_holo. */
         public static final int abc_ab_stacked_transparent_dark_holo=0x7f02000a;
-        
-        /** The Constant abc_ab_stacked_transparent_light_holo. */
         public static final int abc_ab_stacked_transparent_light_holo=0x7f02000b;
-        
-        /** The Constant abc_ab_transparent_dark_holo. */
         public static final int abc_ab_transparent_dark_holo=0x7f02000c;
-        
-        /** The Constant abc_ab_transparent_light_holo. */
         public static final int abc_ab_transparent_light_holo=0x7f02000d;
-        
-        /** The Constant abc_cab_background_bottom_holo_dark. */
         public static final int abc_cab_background_bottom_holo_dark=0x7f02000e;
-        
-        /** The Constant abc_cab_background_bottom_holo_light. */
         public static final int abc_cab_background_bottom_holo_light=0x7f02000f;
-        
-        /** The Constant abc_cab_background_top_holo_dark. */
         public static final int abc_cab_background_top_holo_dark=0x7f020010;
-        
-        /** The Constant abc_cab_background_top_holo_light. */
         public static final int abc_cab_background_top_holo_light=0x7f020011;
-        
-        /** The Constant abc_ic_ab_back_holo_dark. */
         public static final int abc_ic_ab_back_holo_dark=0x7f020012;
-        
-        /** The Constant abc_ic_ab_back_holo_light. */
         public static final int abc_ic_ab_back_holo_light=0x7f020013;
-        
-        /** The Constant abc_ic_cab_done_holo_dark. */
         public static final int abc_ic_cab_done_holo_dark=0x7f020014;
-        
-        /** The Constant abc_ic_cab_done_holo_light. */
         public static final int abc_ic_cab_done_holo_light=0x7f020015;
-        
-        /** The Constant abc_ic_clear. */
         public static final int abc_ic_clear=0x7f020016;
-        
-        /** The Constant abc_ic_clear_disabled. */
         public static final int abc_ic_clear_disabled=0x7f020017;
-        
-        /** The Constant abc_ic_clear_holo_light. */
         public static final int abc_ic_clear_holo_light=0x7f020018;
-        
-        /** The Constant abc_ic_clear_normal. */
         public static final int abc_ic_clear_normal=0x7f020019;
-        
-        /** The Constant abc_ic_clear_search_api_disabled_holo_light. */
         public static final int abc_ic_clear_search_api_disabled_holo_light=0x7f02001a;
-        
-        /** The Constant abc_ic_clear_search_api_holo_light. */
         public static final int abc_ic_clear_search_api_holo_light=0x7f02001b;
-        
-        /** The Constant abc_ic_commit_search_api_holo_dark. */
         public static final int abc_ic_commit_search_api_holo_dark=0x7f02001c;
-        
-        /** The Constant abc_ic_commit_search_api_holo_light. */
         public static final int abc_ic_commit_search_api_holo_light=0x7f02001d;
-        
-        /** The Constant abc_ic_go. */
         public static final int abc_ic_go=0x7f02001e;
-        
-        /** The Constant abc_ic_go_search_api_holo_light. */
         public static final int abc_ic_go_search_api_holo_light=0x7f02001f;
-        
-        /** The Constant abc_ic_menu_moreoverflow_normal_holo_dark. */
         public static final int abc_ic_menu_moreoverflow_normal_holo_dark=0x7f020020;
-        
-        /** The Constant abc_ic_menu_moreoverflow_normal_holo_light. */
         public static final int abc_ic_menu_moreoverflow_normal_holo_light=0x7f020021;
-        
-        /** The Constant abc_ic_menu_share_holo_dark. */
         public static final int abc_ic_menu_share_holo_dark=0x7f020022;
-        
-        /** The Constant abc_ic_menu_share_holo_light. */
         public static final int abc_ic_menu_share_holo_light=0x7f020023;
-        
-        /** The Constant abc_ic_search. */
         public static final int abc_ic_search=0x7f020024;
-        
-        /** The Constant abc_ic_search_api_holo_light. */
         public static final int abc_ic_search_api_holo_light=0x7f020025;
-        
-        /** The Constant abc_ic_voice_search. */
         public static final int abc_ic_voice_search=0x7f020026;
-        
-        /** The Constant abc_ic_voice_search_api_holo_light. */
         public static final int abc_ic_voice_search_api_holo_light=0x7f020027;
-        
-        /** The Constant abc_item_background_holo_dark. */
         public static final int abc_item_background_holo_dark=0x7f020028;
-        
-        /** The Constant abc_item_background_holo_light. */
         public static final int abc_item_background_holo_light=0x7f020029;
-        
-        /** The Constant abc_list_divider_holo_dark. */
         public static final int abc_list_divider_holo_dark=0x7f02002a;
-        
-        /** The Constant abc_list_divider_holo_light. */
         public static final int abc_list_divider_holo_light=0x7f02002b;
-        
-        /** The Constant abc_list_focused_holo. */
         public static final int abc_list_focused_holo=0x7f02002c;
-        
-        /** The Constant abc_list_longpressed_holo. */
         public static final int abc_list_longpressed_holo=0x7f02002d;
-        
-        /** The Constant abc_list_pressed_holo_dark. */
         public static final int abc_list_pressed_holo_dark=0x7f02002e;
-        
-        /** The Constant abc_list_pressed_holo_light. */
         public static final int abc_list_pressed_holo_light=0x7f02002f;
-        
-        /** The Constant abc_list_selector_background_transition_holo_dark. */
         public static final int abc_list_selector_background_transition_holo_dark=0x7f020030;
-        
-        /** The Constant abc_list_selector_background_transition_holo_light. */
         public static final int abc_list_selector_background_transition_holo_light=0x7f020031;
-        
-        /** The Constant abc_list_selector_disabled_holo_dark. */
         public static final int abc_list_selector_disabled_holo_dark=0x7f020032;
-        
-        /** The Constant abc_list_selector_disabled_holo_light. */
         public static final int abc_list_selector_disabled_holo_light=0x7f020033;
-        
-        /** The Constant abc_list_selector_holo_dark. */
         public static final int abc_list_selector_holo_dark=0x7f020034;
-        
-        /** The Constant abc_list_selector_holo_light. */
         public static final int abc_list_selector_holo_light=0x7f020035;
-        
-        /** The Constant abc_menu_dropdown_panel_holo_dark. */
         public static final int abc_menu_dropdown_panel_holo_dark=0x7f020036;
-        
-        /** The Constant abc_menu_dropdown_panel_holo_light. */
         public static final int abc_menu_dropdown_panel_holo_light=0x7f020037;
-        
-        /** The Constant abc_menu_hardkey_panel_holo_dark. */
         public static final int abc_menu_hardkey_panel_holo_dark=0x7f020038;
-        
-        /** The Constant abc_menu_hardkey_panel_holo_light. */
         public static final int abc_menu_hardkey_panel_holo_light=0x7f020039;
-        
-        /** The Constant abc_search_dropdown_dark. */
         public static final int abc_search_dropdown_dark=0x7f02003a;
-        
-        /** The Constant abc_search_dropdown_light. */
         public static final int abc_search_dropdown_light=0x7f02003b;
-        
-        /** The Constant abc_spinner_ab_default_holo_dark. */
         public static final int abc_spinner_ab_default_holo_dark=0x7f02003c;
-        
-        /** The Constant abc_spinner_ab_default_holo_light. */
         public static final int abc_spinner_ab_default_holo_light=0x7f02003d;
-        
-        /** The Constant abc_spinner_ab_disabled_holo_dark. */
         public static final int abc_spinner_ab_disabled_holo_dark=0x7f02003e;
-        
-        /** The Constant abc_spinner_ab_disabled_holo_light. */
         public static final int abc_spinner_ab_disabled_holo_light=0x7f02003f;
-        
-        /** The Constant abc_spinner_ab_focused_holo_dark. */
         public static final int abc_spinner_ab_focused_holo_dark=0x7f020040;
-        
-        /** The Constant abc_spinner_ab_focused_holo_light. */
         public static final int abc_spinner_ab_focused_holo_light=0x7f020041;
-        
-        /** The Constant abc_spinner_ab_holo_dark. */
         public static final int abc_spinner_ab_holo_dark=0x7f020042;
-        
-        /** The Constant abc_spinner_ab_holo_light. */
         public static final int abc_spinner_ab_holo_light=0x7f020043;
-        
-        /** The Constant abc_spinner_ab_pressed_holo_dark. */
         public static final int abc_spinner_ab_pressed_holo_dark=0x7f020044;
-        
-        /** The Constant abc_spinner_ab_pressed_holo_light. */
         public static final int abc_spinner_ab_pressed_holo_light=0x7f020045;
-        
-        /** The Constant abc_tab_indicator_ab_holo. */
         public static final int abc_tab_indicator_ab_holo=0x7f020046;
-        
-        /** The Constant abc_tab_selected_focused_holo. */
         public static final int abc_tab_selected_focused_holo=0x7f020047;
-        
-        /** The Constant abc_tab_selected_holo. */
         public static final int abc_tab_selected_holo=0x7f020048;
-        
-        /** The Constant abc_tab_selected_pressed_holo. */
         public static final int abc_tab_selected_pressed_holo=0x7f020049;
-        
-        /** The Constant abc_tab_unselected_pressed_holo. */
         public static final int abc_tab_unselected_pressed_holo=0x7f02004a;
-        
-        /** The Constant abc_textfield_search_default_holo_dark. */
         public static final int abc_textfield_search_default_holo_dark=0x7f02004b;
-        
-        /** The Constant abc_textfield_search_default_holo_light. */
         public static final int abc_textfield_search_default_holo_light=0x7f02004c;
-        
-        /** The Constant abc_textfield_search_right_default_holo_dark. */
         public static final int abc_textfield_search_right_default_holo_dark=0x7f02004d;
-        
-        /** The Constant abc_textfield_search_right_default_holo_light. */
         public static final int abc_textfield_search_right_default_holo_light=0x7f02004e;
-        
-        /** The Constant abc_textfield_search_right_selected_holo_dark. */
         public static final int abc_textfield_search_right_selected_holo_dark=0x7f02004f;
-        
-        /** The Constant abc_textfield_search_right_selected_holo_light. */
         public static final int abc_textfield_search_right_selected_holo_light=0x7f020050;
-        
-        /** The Constant abc_textfield_search_selected_holo_dark. */
         public static final int abc_textfield_search_selected_holo_dark=0x7f020051;
-        
-        /** The Constant abc_textfield_search_selected_holo_light. */
         public static final int abc_textfield_search_selected_holo_light=0x7f020052;
-        
-        /** The Constant abc_textfield_searchview_holo_dark. */
         public static final int abc_textfield_searchview_holo_dark=0x7f020053;
-        
-        /** The Constant abc_textfield_searchview_holo_light. */
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
-        
-        /** The Constant abc_textfield_searchview_right_holo_dark. */
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
-        
-        /** The Constant abc_textfield_searchview_right_holo_light. */
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        
-        /** The Constant abcs_2. */
         public static final int abcs_2=0x7f020057;
-        
-        /** The Constant abstract_light. */
         public static final int abstract_light=0x7f020058;
-        
-        /** The Constant abstract_msg_bg. */
         public static final int abstract_msg_bg=0x7f020059;
-        
-        /** The Constant background4. */
         public static final int background4=0x7f02005a;
-        
-        /** The Constant box. */
         public static final int box=0x7f02005b;
-        
-        /** The Constant bubble_green. */
         public static final int bubble_green=0x7f02005c;
-        
-        /** The Constant bubble_yellow. */
         public static final int bubble_yellow=0x7f02005d;
-        
-        /** The Constant common_signin_btn_icon_dark. */
         public static final int common_signin_btn_icon_dark=0x7f02005e;
-        
-        /** The Constant common_signin_btn_icon_disabled_dark. */
         public static final int common_signin_btn_icon_disabled_dark=0x7f02005f;
-        
-        /** The Constant common_signin_btn_icon_disabled_focus_dark. */
         public static final int common_signin_btn_icon_disabled_focus_dark=0x7f020060;
-        
-        /** The Constant common_signin_btn_icon_disabled_focus_light. */
         public static final int common_signin_btn_icon_disabled_focus_light=0x7f020061;
-        
-        /** The Constant common_signin_btn_icon_disabled_light. */
         public static final int common_signin_btn_icon_disabled_light=0x7f020062;
-        
-        /** The Constant common_signin_btn_icon_focus_dark. */
         public static final int common_signin_btn_icon_focus_dark=0x7f020063;
-        
-        /** The Constant common_signin_btn_icon_focus_light. */
         public static final int common_signin_btn_icon_focus_light=0x7f020064;
-        
-        /** The Constant common_signin_btn_icon_light. */
         public static final int common_signin_btn_icon_light=0x7f020065;
-        
-        /** The Constant common_signin_btn_icon_normal_dark. */
         public static final int common_signin_btn_icon_normal_dark=0x7f020066;
-        
-        /** The Constant common_signin_btn_icon_normal_light. */
         public static final int common_signin_btn_icon_normal_light=0x7f020067;
-        
-        /** The Constant common_signin_btn_icon_pressed_dark. */
         public static final int common_signin_btn_icon_pressed_dark=0x7f020068;
-        
-        /** The Constant common_signin_btn_icon_pressed_light. */
         public static final int common_signin_btn_icon_pressed_light=0x7f020069;
-        
-        /** The Constant common_signin_btn_text_dark. */
         public static final int common_signin_btn_text_dark=0x7f02006a;
-        
-        /** The Constant common_signin_btn_text_disabled_dark. */
         public static final int common_signin_btn_text_disabled_dark=0x7f02006b;
-        
-        /** The Constant common_signin_btn_text_disabled_focus_dark. */
         public static final int common_signin_btn_text_disabled_focus_dark=0x7f02006c;
-        
-        /** The Constant common_signin_btn_text_disabled_focus_light. */
         public static final int common_signin_btn_text_disabled_focus_light=0x7f02006d;
-        
-        /** The Constant common_signin_btn_text_disabled_light. */
         public static final int common_signin_btn_text_disabled_light=0x7f02006e;
-        
-        /** The Constant common_signin_btn_text_focus_dark. */
         public static final int common_signin_btn_text_focus_dark=0x7f02006f;
-        
-        /** The Constant common_signin_btn_text_focus_light. */
         public static final int common_signin_btn_text_focus_light=0x7f020070;
-        
-        /** The Constant common_signin_btn_text_light. */
         public static final int common_signin_btn_text_light=0x7f020071;
-        
-        /** The Constant common_signin_btn_text_normal_dark. */
         public static final int common_signin_btn_text_normal_dark=0x7f020072;
-        
-        /** The Constant common_signin_btn_text_normal_light. */
         public static final int common_signin_btn_text_normal_light=0x7f020073;
-        
-        /** The Constant common_signin_btn_text_pressed_dark. */
         public static final int common_signin_btn_text_pressed_dark=0x7f020074;
-        
-        /** The Constant common_signin_btn_text_pressed_light. */
         public static final int common_signin_btn_text_pressed_light=0x7f020075;
-        
-        /** The Constant funky_bg. */
         public static final int funky_bg=0x7f020076;
-        
-        /** The Constant ic_contact_picture. */
         public static final int ic_contact_picture=0x7f020077;
-        
-        /** The Constant ic_launcher. */
         public static final int ic_launcher=0x7f020078;
-        
-        /** The Constant ic_menu_attachment. */
         public static final int ic_menu_attachment=0x7f020079;
-        
-        /** The Constant ic_plusone_medium_off_client. */
         public static final int ic_plusone_medium_off_client=0x7f02007a;
-        
-        /** The Constant ic_plusone_small_off_client. */
         public static final int ic_plusone_small_off_client=0x7f02007b;
-        
-        /** The Constant ic_plusone_standard_off_client. */
         public static final int ic_plusone_standard_off_client=0x7f02007c;
-        
-        /** The Constant ic_plusone_tall_off_client. */
         public static final int ic_plusone_tall_off_client=0x7f02007d;
-        
-        /** The Constant powered_by_google_dark. */
         public static final int powered_by_google_dark=0x7f02007e;
-        
-        /** The Constant powered_by_google_light. */
         public static final int powered_by_google_light=0x7f02007f;
-        
-        /** The Constant punticos4. */
         public static final int punticos4=0x7f020080;
-        
-        /** The Constant silhouette_xperia. */
         public static final int silhouette_xperia=0x7f020081;
-        
-        /** The Constant test. */
         public static final int test=0x7f020082;
-        
-        /** The Constant wallpaper_3. */
         public static final int wallpaper_3=0x7f020083;
     }
-    
-    /**
-     * The Class id.
-     */
     public static final class id {
-        
-        /** The Constant action_add. */
         public static final int action_add=0x7f06006a;
-        
-        /** The Constant action_bar. */
         public static final int action_bar=0x7f06002e;
-        
-        /** The Constant action_bar_activity_content. */
         public static final int action_bar_activity_content=0x7f060015;
-        
-        /** The Constant action_bar_container. */
         public static final int action_bar_container=0x7f06002d;
-        
-        /** The Constant action_bar_overlay_layout. */
         public static final int action_bar_overlay_layout=0x7f060031;
-        
-        /** The Constant action_bar_root. */
         public static final int action_bar_root=0x7f06002c;
-        
-        /** The Constant action_bar_subtitle. */
         public static final int action_bar_subtitle=0x7f060035;
-        
-        /** The Constant action_bar_title. */
         public static final int action_bar_title=0x7f060034;
-        
-        /** The Constant action_context_bar. */
         public static final int action_context_bar=0x7f06002f;
-        
-        /** The Constant action_copy. */
         public static final int action_copy=0x7f060068;
-        
-        /** The Constant action_delete. */
         public static final int action_delete=0x7f060069;
-        
-        /** The Constant action_edit. */
         public static final int action_edit=0x7f060067;
-        
-        /** The Constant action_menu_divider. */
         public static final int action_menu_divider=0x7f060016;
-        
-        /** The Constant action_menu_presenter. */
         public static final int action_menu_presenter=0x7f060017;
-        
-        /** The Constant action_mode_close_button. */
         public static final int action_mode_close_button=0x7f060036;
-        
-        /** The Constant action_send. */
         public static final int action_send=0x7f06006b;
-        
-        /** The Constant action_settings. */
         public static final int action_settings=0x7f06006c;
-        
-        /** The Constant activity_chooser_view_content. */
         public static final int activity_chooser_view_content=0x7f060037;
-        
-        /** The Constant adView. */
         public static final int adView=0x7f06005a;
-        
-        /** The Constant always. */
         public static final int always=0x7f06000b;
-        
-        /** The Constant attach_btn. */
         public static final int attach_btn=0x7f060054;
-        
-        /** The Constant attachment. */
         public static final int attachment=0x7f060064;
-        
-        /** The Constant avatar. */
         public static final int avatar=0x7f060061;
-        
-        /** The Constant beginning. */
         public static final int beginning=0x7f060011;
-        
-        /** The Constant book_now. */
         public static final int book_now=0x7f060028;
-        
-        /** The Constant btnAccept. */
         public static final int btnAccept=0x7f06005d;
-        
-        /** The Constant btnDecline. */
         public static final int btnDecline=0x7f06005e;
-        
-        /** The Constant buyButton. */
         public static final int buyButton=0x7f060022;
-        
-        /** The Constant buy_now. */
         public static final int buy_now=0x7f060027;
-        
-        /** The Constant buy_with_google. */
         public static final int buy_with_google=0x7f060026;
-        
-        /** The Constant checkbox. */
         public static final int checkbox=0x7f06003f;
-        
-        /** The Constant chkExpirable. */
         public static final int chkExpirable=0x7f06004e;
-        
-        /** The Constant classic. */
         public static final int classic=0x7f060029;
-        
-        /** The Constant collapseActionView. */
         public static final int collapseActionView=0x7f06000d;
-        
-        /** The Constant contactslist. */
         public static final int contactslist=0x7f060056;
-        
-        /** The Constant default_activity_button. */
         public static final int default_activity_button=0x7f06003a;
-        
-        /** The Constant dialog. */
         public static final int dialog=0x7f06000e;
-        
-        /** The Constant disableHome. */
         public static final int disableHome=0x7f060008;
-        
-        /** The Constant dropdown. */
         public static final int dropdown=0x7f06000f;
-        
-        /** The Constant edit_query. */
         public static final int edit_query=0x7f060042;
-        
-        /** The Constant end. */
         public static final int end=0x7f060013;
-        
-        /** The Constant expand_activities_button. */
         public static final int expand_activities_button=0x7f060038;
-        
-        /** The Constant expanded_menu. */
         public static final int expanded_menu=0x7f06003e;
-        
-        /** The Constant grayscale. */
         public static final int grayscale=0x7f06002a;
-        
-        /** The Constant hello. */
         public static final int hello=0x7f060058;
-        
-        /** The Constant holo_dark. */
         public static final int holo_dark=0x7f06001d;
-        
-        /** The Constant holo_light. */
         public static final int holo_light=0x7f06001e;
-        
-        /** The Constant home. */
         public static final int home=0x7f060014;
-        
-        /** The Constant homeAsUp. */
         public static final int homeAsUp=0x7f060005;
-        
-        /** The Constant hybrid. */
         public static final int hybrid=0x7f06001c;
-        
-        /** The Constant icon. */
         public static final int icon=0x7f06003c;
-        
-        /** The Constant ifRoom. */
         public static final int ifRoom=0x7f06000a;
-        
-        /** The Constant image. */
         public static final int image=0x7f060039;
-        
-        /** The Constant imgViewAttachment. */
         public static final int imgViewAttachment=0x7f060065;
-        
-        /** The Constant layoutAcatar. */
         public static final int layoutAcatar=0x7f060060;
-        
-        /** The Constant layoutAccept. */
         public static final int layoutAccept=0x7f06005b;
-        
-        /** The Constant layoutActionbar. */
         public static final int layoutActionbar=0x7f060057;
-        
-        /** The Constant lblExpire. */
         public static final int lblExpire=0x7f06004f;
-        
-        /** The Constant listMode. */
         public static final int listMode=0x7f060001;
-        
-        /** The Constant listView. */
         public static final int listView=0x7f060052;
-        
-        /** The Constant list_item. */
         public static final int list_item=0x7f06003b;
-        
-        /** The Constant match_parent. */
         public static final int match_parent=0x7f060024;
-        
-        /** The Constant middle. */
         public static final int middle=0x7f060012;
-        
-        /** The Constant monochrome. */
         public static final int monochrome=0x7f06002b;
-        
-        /** The Constant msg_edit. */
         public static final int msg_edit=0x7f060055;
-        
-        /** The Constant msg_list. */
         public static final int msg_list=0x7f06005f;
-        
-        /** The Constant never. */
         public static final int never=0x7f060009;
-        
-        /** The Constant none. */
         public static final int none=0x7f060010;
-        
-        /** The Constant normal. */
         public static final int normal=0x7f060000;
-        
-        /** The Constant production. */
         public static final int production=0x7f06001f;
-        
-        /** The Constant progress_circular. */
         public static final int progress_circular=0x7f060018;
-        
-        /** The Constant progress_horizontal. */
         public static final int progress_horizontal=0x7f060019;
-        
-        /** The Constant radio. */
         public static final int radio=0x7f060041;
-        
-        /** The Constant sandbox. */
         public static final int sandbox=0x7f060020;
-        
-        /** The Constant satellite. */
         public static final int satellite=0x7f06001a;
-        
-        /** The Constant search_badge. */
         public static final int search_badge=0x7f060044;
-        
-        /** The Constant search_bar. */
         public static final int search_bar=0x7f060043;
-        
-        /** The Constant search_button. */
         public static final int search_button=0x7f060045;
-        
-        /** The Constant search_close_btn. */
         public static final int search_close_btn=0x7f06004a;
-        
-        /** The Constant search_edit_frame. */
         public static final int search_edit_frame=0x7f060046;
-        
-        /** The Constant search_go_btn. */
         public static final int search_go_btn=0x7f06004c;
-        
-        /** The Constant search_mag_icon. */
         public static final int search_mag_icon=0x7f060047;
-        
-        /** The Constant search_plate. */
         public static final int search_plate=0x7f060048;
-        
-        /** The Constant search_src_text. */
         public static final int search_src_text=0x7f060049;
-        
-        /** The Constant search_voice_btn. */
         public static final int search_voice_btn=0x7f06004d;
-        
-        /** The Constant seekBar1. */
         public static final int seekBar1=0x7f060050;
-        
-        /** The Constant selectionDetails. */
         public static final int selectionDetails=0x7f060023;
-        
-        /** The Constant send_btn. */
         public static final int send_btn=0x7f060053;
-        
-        /** The Constant sep. */
         public static final int sep=0x7f06005c;
-        
-        /** The Constant shortcut. */
         public static final int shortcut=0x7f060040;
-        
-        /** The Constant showCustom. */
         public static final int showCustom=0x7f060007;
-        
-        /** The Constant showHome. */
         public static final int showHome=0x7f060004;
-        
-        /** The Constant showTitle. */
         public static final int showTitle=0x7f060006;
-        
-        /** The Constant split_action_bar. */
         public static final int split_action_bar=0x7f060030;
-        
-        /** The Constant strict_sandbox. */
         public static final int strict_sandbox=0x7f060021;
-        
-        /** The Constant submit_area. */
         public static final int submit_area=0x7f06004b;
-        
-        /** The Constant tabMode. */
         public static final int tabMode=0x7f060002;
-        
-        /** The Constant terrain. */
         public static final int terrain=0x7f06001b;
-        
-        /** The Constant text1. */
         public static final int text1=0x7f060062;
-        
-        /** The Constant text2. */
         public static final int text2=0x7f060063;
-        
-        /** The Constant textEmail. */
         public static final int textEmail=0x7f060066;
-        
-        /** The Constant textView2. */
         public static final int textView2=0x7f060051;
-        
-        /** The Constant title. */
         public static final int title=0x7f06003d;
-        
-        /** The Constant top_action_bar. */
         public static final int top_action_bar=0x7f060032;
-        
-        /** The Constant txtContact. */
         public static final int txtContact=0x7f060059;
-        
-        /** The Constant up. */
         public static final int up=0x7f060033;
-        
-        /** The Constant useLogo. */
         public static final int useLogo=0x7f060003;
-        
-        /** The Constant withText. */
         public static final int withText=0x7f06000c;
-        
-        /** The Constant wrap_content. */
         public static final int wrap_content=0x7f060025;
     }
-    
-    /**
-     * The Class integer.
-     */
     public static final class integer {
         /**  The maximum number of action buttons that should be permitted within
          an action bar/action mode. This will be used to determine how many
@@ -2211,131 +1615,47 @@ containing a value of this type.
          showAsAction="ifRoom" items can fit. "always" items can override this. 
          */
         public static final int abc_max_action_buttons=0x7f0a0000;
-        
-        /** The Constant google_play_services_version. */
         public static final int google_play_services_version=0x7f0a0001;
     }
-    
-    /**
-     * The Class layout.
-     */
     public static final class layout {
-        
-        /** The Constant abc_action_bar_decor. */
         public static final int abc_action_bar_decor=0x7f030000;
-        
-        /** The Constant abc_action_bar_decor_include. */
         public static final int abc_action_bar_decor_include=0x7f030001;
-        
-        /** The Constant abc_action_bar_decor_overlay. */
         public static final int abc_action_bar_decor_overlay=0x7f030002;
-        
-        /** The Constant abc_action_bar_home. */
         public static final int abc_action_bar_home=0x7f030003;
-        
-        /** The Constant abc_action_bar_tab. */
         public static final int abc_action_bar_tab=0x7f030004;
-        
-        /** The Constant abc_action_bar_tabbar. */
         public static final int abc_action_bar_tabbar=0x7f030005;
-        
-        /** The Constant abc_action_bar_title_item. */
         public static final int abc_action_bar_title_item=0x7f030006;
-        
-        /** The Constant abc_action_bar_view_list_nav_layout. */
         public static final int abc_action_bar_view_list_nav_layout=0x7f030007;
-        
-        /** The Constant abc_action_menu_item_layout. */
         public static final int abc_action_menu_item_layout=0x7f030008;
-        
-        /** The Constant abc_action_menu_layout. */
         public static final int abc_action_menu_layout=0x7f030009;
-        
-        /** The Constant abc_action_mode_bar. */
         public static final int abc_action_mode_bar=0x7f03000a;
-        
-        /** The Constant abc_action_mode_close_item. */
         public static final int abc_action_mode_close_item=0x7f03000b;
-        
-        /** The Constant abc_activity_chooser_view. */
         public static final int abc_activity_chooser_view=0x7f03000c;
-        
-        /** The Constant abc_activity_chooser_view_include. */
         public static final int abc_activity_chooser_view_include=0x7f03000d;
-        
-        /** The Constant abc_activity_chooser_view_list_item. */
         public static final int abc_activity_chooser_view_list_item=0x7f03000e;
-        
-        /** The Constant abc_expanded_menu_layout. */
         public static final int abc_expanded_menu_layout=0x7f03000f;
-        
-        /** The Constant abc_list_menu_item_checkbox. */
         public static final int abc_list_menu_item_checkbox=0x7f030010;
-        
-        /** The Constant abc_list_menu_item_icon. */
         public static final int abc_list_menu_item_icon=0x7f030011;
-        
-        /** The Constant abc_list_menu_item_layout. */
         public static final int abc_list_menu_item_layout=0x7f030012;
-        
-        /** The Constant abc_list_menu_item_radio. */
         public static final int abc_list_menu_item_radio=0x7f030013;
-        
-        /** The Constant abc_popup_menu_item_layout. */
         public static final int abc_popup_menu_item_layout=0x7f030014;
-        
-        /** The Constant abc_search_dropdown_item_icons_2line. */
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
-        
-        /** The Constant abc_search_view. */
         public static final int abc_search_view=0x7f030016;
-        
-        /** The Constant abc_simple_decor. */
         public static final int abc_simple_decor=0x7f030017;
-        
-        /** The Constant activity_broadcast. */
         public static final int activity_broadcast=0x7f030018;
-        
-        /** The Constant activity_main. */
         public static final int activity_main=0x7f030019;
-        
-        /** The Constant add_contact_dialog. */
         public static final int add_contact_dialog=0x7f03001a;
-        
-        /** The Constant chat_activity. */
         public static final int chat_activity=0x7f03001b;
-        
-        /** The Constant chat_list_item_left_aligned. */
         public static final int chat_list_item_left_aligned=0x7f03001c;
-        
-        /** The Constant chat_list_item_right_aligned. */
         public static final int chat_list_item_right_aligned=0x7f03001d;
-        
-        /** The Constant main_list_item. */
         public static final int main_list_item=0x7f03001e;
-        
-        /** The Constant support_simple_spinner_dropdown_item. */
         public static final int support_simple_spinner_dropdown_item=0x7f03001f;
     }
-    
-    /**
-     * The Class menu.
-     */
     public static final class menu {
-        
-        /** The Constant chat. */
         public static final int chat=0x7f0e0000;
-        
-        /** The Constant chat_message. */
         public static final int chat_message=0x7f0e0001;
-        
-        /** The Constant main. */
         public static final int main=0x7f0e0002;
     }
-    
-    /**
-     * The Class string.
-     */
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
@@ -2349,27 +1669,27 @@ containing a value of this type.
         /**  Label for the "Done" button on the far left of action mode toolbars. 
          */
         public static final int abc_action_mode_done=0x7f0b0000;
-        
-        /**   Title for a button to expand the list of activities in ActivityChooserView [CHAR LIMIT=25]. */
+        /**  Title for a button to expand the list of activities in ActivityChooserView [CHAR LIMIT=25] 
+         */
         public static final int abc_activity_chooser_view_see_all=0x7f0b000a;
         /**  ActivityChooserView - accessibility support 
  Description of the shwoing of a popup window with activities to choose from. [CHAR LIMIT=NONE] 
          */
         public static final int abc_activitychooserview_choose_application=0x7f0b0009;
-        
-        /**   SearchView accessibility description for clear button [CHAR LIMIT=NONE]. */
+        /**  SearchView accessibility description for clear button [CHAR LIMIT=NONE] 
+         */
         public static final int abc_searchview_description_clear=0x7f0b0006;
-        
-        /**   SearchView accessibility description for search text field [CHAR LIMIT=NONE]. */
+        /**  SearchView accessibility description for search text field [CHAR LIMIT=NONE] 
+         */
         public static final int abc_searchview_description_query=0x7f0b0005;
-        
-        /**   SearchView accessibility description for search button [CHAR LIMIT=NONE]. */
+        /**  SearchView accessibility description for search button [CHAR LIMIT=NONE] 
+         */
         public static final int abc_searchview_description_search=0x7f0b0004;
-        
-        /**   SearchView accessibility description for submit button [CHAR LIMIT=NONE]. */
+        /**  SearchView accessibility description for submit button [CHAR LIMIT=NONE] 
+         */
         public static final int abc_searchview_description_submit=0x7f0b0007;
-        
-        /**   SearchView accessibility description for voice button [CHAR LIMIT=NONE]. */
+        /**  SearchView accessibility description for voice button [CHAR LIMIT=NONE] 
+         */
         public static final int abc_searchview_description_voice=0x7f0b0008;
         /**  Description of the choose target button in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
@@ -2377,55 +1697,44 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0b000b;
-        
-        /** The Constant action_settings. */
         public static final int action_settings=0x7f0b002e;
-        
-        /** The Constant app_name. */
         public static final int app_name=0x7f0b002d;
-        
-        /** The Constant auth_client_needs_enabling_title. */
         public static final int auth_client_needs_enabling_title=0x7f0b000e;
-        
-        /** The Constant auth_client_needs_installation_title. */
         public static final int auth_client_needs_installation_title=0x7f0b000f;
-        
-        /** The Constant auth_client_needs_update_title. */
         public static final int auth_client_needs_update_title=0x7f0b0010;
-        
-        /** The Constant auth_client_play_services_err_notification_msg. */
         public static final int auth_client_play_services_err_notification_msg=0x7f0b0011;
-        
-        /** The Constant auth_client_requested_by_msg. */
         public static final int auth_client_requested_by_msg=0x7f0b0012;
-        
-        /** The Constant auth_client_using_bad_version_title. */
         public static final int auth_client_using_bad_version_title=0x7f0b000d;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
          */
         public static final int common_google_play_services_enable_button=0x7f0b001e;
-        
-        /**   Message in confirmation dialog informing user they need to enable         Google Play services in application settings [CHAR LIMIT=NONE]. */
+        /**  Message in confirmation dialog informing user they need to enable
+        Google Play services in application settings [CHAR LIMIT=NONE] 
+         */
         public static final int common_google_play_services_enable_text=0x7f0b001d;
-        
-        /**   Title of confirmation dialog informing user they need to enable         Google Play services in application settings [CHAR LIMIT=40]. */
+        /**  Title of confirmation dialog informing user they need to enable
+        Google Play services in application settings [CHAR LIMIT=40] 
+         */
         public static final int common_google_play_services_enable_title=0x7f0b001c;
         /**   Requested by string saying which app requested the notification. [CHAR LIMIT=42] 
          */
         public static final int common_google_play_services_error_notification_requested_by_msg=0x7f0b0017;
-        
-        /**   Button in confirmation dialog for installing Google Play services [CHAR LIMIT=40]. */
+        /**  Button in confirmation dialog for installing Google Play services [CHAR LIMIT=40] 
+         */
         public static final int common_google_play_services_install_button=0x7f0b001b;
-        
-        /**   (For phones) Message in confirmation dialog informing user that         they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE]. */
+        /**  (For phones) Message in confirmation dialog informing user that
+        they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE] 
+         */
         public static final int common_google_play_services_install_text_phone=0x7f0b0019;
-        
-        /**   (For tablets) Message in confirmation dialog informing user that         they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE]. */
+        /**  (For tablets) Message in confirmation dialog informing user that
+        they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE] 
+         */
         public static final int common_google_play_services_install_text_tablet=0x7f0b001a;
-        
-        /**   Title of confirmation dialog informing user that they need to install         Google Play services (from Play Store) [CHAR LIMIT=40]. */
+        /**  Title of confirmation dialog informing user that they need to install
+        Google Play services (from Play Store) [CHAR LIMIT=40] 
+         */
         public static final int common_google_play_services_install_title=0x7f0b0018;
         /**  Message in confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=NONE] 
          */
@@ -2451,103 +1760,80 @@ containing a value of this type.
         application to work. [CHAR LIMIT=70] 
          */
         public static final int common_google_play_services_notification_needs_update_title=0x7f0b0015;
-        
-        /**    Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=42]. */
+        /**   Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=42] 
+         */
         public static final int common_google_play_services_notification_ticker=0x7f0b0013;
-        
-        /**   Message in confirmation dialog informing user there is an unknown issue in Google Play         services [CHAR LIMIT=NONE]. */
+        /**  Message in confirmation dialog informing user there is an unknown issue in Google Play
+        services [CHAR LIMIT=NONE] 
+         */
         public static final int common_google_play_services_unknown_issue=0x7f0b0025;
         /**  Message in confirmation dialog informing user that date on the device is not correct,
     causing certificate checks to fail. [CHAR LIMIT=NONE] 
          */
         public static final int common_google_play_services_unsupported_date_text=0x7f0b0028;
-        
-        /**   Message in confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=NONE]. */
+        /**  Message in confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=NONE] 
+         */
         public static final int common_google_play_services_unsupported_text=0x7f0b0027;
-        
-        /**   Title of confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=40]. */
+        /**  Title of confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=40] 
+         */
         public static final int common_google_play_services_unsupported_title=0x7f0b0026;
-        
-        /**   Button in confirmation dialog for updating Google Play services [CHAR LIMIT=40]. */
+        /**  Button in confirmation dialog for updating Google Play services [CHAR LIMIT=40] 
+         */
         public static final int common_google_play_services_update_button=0x7f0b0029;
-        
-        /**   Message in confirmation dialog informing user that they need to update         Google Play services (from Play Store) [CHAR LIMIT=NONE]. */
+        /**  Message in confirmation dialog informing user that they need to update
+        Google Play services (from Play Store) [CHAR LIMIT=NONE] 
+         */
         public static final int common_google_play_services_update_text=0x7f0b0020;
-        
-        /**   Title of confirmation dialog informing user that they need to update         Google Play services (from Play Store) [CHAR LIMIT=40]. */
+        /**  Title of confirmation dialog informing user that they need to update
+        Google Play services (from Play Store) [CHAR LIMIT=40] 
+         */
         public static final int common_google_play_services_update_title=0x7f0b001f;
-        
-        /**   Sign-in button text [CHAR LIMIT=15]. */
+        /**  Sign-in button text [CHAR LIMIT=15] 
+         */
         public static final int common_signin_button_text=0x7f0b002a;
-        
-        /**   Long form sign-in button text [CHAR LIMIT=30]. */
+        /**  Long form sign-in button text [CHAR LIMIT=30] 
+         */
         public static final int common_signin_button_text_long=0x7f0b002b;
-        
-        /** The Constant hello_world. */
         public static final int hello_world=0x7f0b002f;
-        
-        /** The Constant pref_default_display_name. */
         public static final int pref_default_display_name=0x7f0b0035;
-        
-        /** The Constant pref_description_social_recommendations. */
         public static final int pref_description_social_recommendations=0x7f0b0033;
-        
-        /**   Example settings for Data & Sync. */
+        /**  Example settings for Data & Sync 
+         */
         public static final int pref_header_data_sync=0x7f0b0037;
-        
-        /**   Strings related to Settings   Example General settings. */
+        /**  Strings related to Settings 
+ Example General settings 
+         */
         public static final int pref_header_general=0x7f0b0031;
-        
-        /**   Example settings for Notifications. */
+        /**  Example settings for Notifications 
+         */
         public static final int pref_header_notifications=0x7f0b003a;
-        
-        /** The Constant pref_ringtone_silent. */
         public static final int pref_ringtone_silent=0x7f0b003d;
-        
-        /** The Constant pref_title_add_friends_to_messages. */
         public static final int pref_title_add_friends_to_messages=0x7f0b0036;
-        
-        /** The Constant pref_title_display_name. */
         public static final int pref_title_display_name=0x7f0b0034;
-        
-        /** The Constant pref_title_new_message_notifications. */
         public static final int pref_title_new_message_notifications=0x7f0b003b;
-        
-        /** The Constant pref_title_ringtone. */
         public static final int pref_title_ringtone=0x7f0b003c;
-        
-        /** The Constant pref_title_social_recommendations. */
         public static final int pref_title_social_recommendations=0x7f0b0032;
-        
-        /** The Constant pref_title_sync_frequency. */
         public static final int pref_title_sync_frequency=0x7f0b0038;
-        
-        /** The Constant pref_title_system_sync_settings. */
         public static final int pref_title_system_sync_settings=0x7f0b0039;
-        
-        /** The Constant pref_title_vibrate. */
         public static final int pref_title_vibrate=0x7f0b003e;
-        
-        /** The Constant title_activity_settings. */
         public static final int title_activity_settings=0x7f0b0030;
-        
-        /**   Text on a placeholder buy button when Google Play services is not          available or up-to-date. */
+        /**  Text on a placeholder buy button when Google Play services is not
+         available or up-to-date 
+         */
         public static final int wallet_buy_button_place_holder=0x7f0b002c;
     }
-    
-    /**
-     * The Class style.
-     */
     public static final class style {
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
 
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
 
         
 
@@ -2572,26 +1858,14 @@ containing a value of this type.
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0c0063;
-        
-        /** The Constant TextAppearance_AppCompat_Base_SearchResult. */
         public static final int TextAppearance_AppCompat_Base_SearchResult=0x7f0c006d;
-        
-        /** The Constant TextAppearance_AppCompat_Base_SearchResult_Subtitle. */
         public static final int TextAppearance_AppCompat_Base_SearchResult_Subtitle=0x7f0c006f;
-        
-        /**   Search View result styles. */
+        /**  Search View result styles 
+         */
         public static final int TextAppearance_AppCompat_Base_SearchResult_Title=0x7f0c006e;
-        
-        /** The Constant TextAppearance_AppCompat_Base_Widget_PopupMenu_Large. */
         public static final int TextAppearance_AppCompat_Base_Widget_PopupMenu_Large=0x7f0c0069;
-        
-        /** The Constant TextAppearance_AppCompat_Base_Widget_PopupMenu_Small. */
         public static final int TextAppearance_AppCompat_Base_Widget_PopupMenu_Small=0x7f0c006a;
-        
-        /** The Constant TextAppearance_AppCompat_Light_Base_SearchResult. */
         public static final int TextAppearance_AppCompat_Light_Base_SearchResult=0x7f0c0070;
-        
-        /** The Constant TextAppearance_AppCompat_Light_Base_SearchResult_Subtitle. */
         public static final int TextAppearance_AppCompat_Light_Base_SearchResult_Subtitle=0x7f0c0072;
         /** 
         TextAppearance.Holo.Light.SearchResult.* are private so we extend from the default
@@ -2599,101 +1873,37 @@ containing a value of this type.
     
          */
         public static final int TextAppearance_AppCompat_Light_Base_SearchResult_Title=0x7f0c0071;
-        
-        /** The Constant TextAppearance_AppCompat_Light_Base_Widget_PopupMenu_Large. */
         public static final int TextAppearance_AppCompat_Light_Base_Widget_PopupMenu_Large=0x7f0c006b;
-        
-        /** The Constant TextAppearance_AppCompat_Light_Base_Widget_PopupMenu_Small. */
         public static final int TextAppearance_AppCompat_Light_Base_Widget_PopupMenu_Small=0x7f0c006c;
-        
-        /** The Constant TextAppearance_AppCompat_Light_SearchResult_Subtitle. */
         public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0c0035;
-        
-        /** The Constant TextAppearance_AppCompat_Light_SearchResult_Title. */
         public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0c0034;
-        
-        /** The Constant TextAppearance_AppCompat_Light_Widget_PopupMenu_Large. */
         public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0c0030;
-        
-        /** The Constant TextAppearance_AppCompat_Light_Widget_PopupMenu_Small. */
         public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0c0031;
-        
-        /** The Constant TextAppearance_AppCompat_SearchResult_Subtitle. */
         public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0c0033;
-        
-        /** The Constant TextAppearance_AppCompat_SearchResult_Title. */
         public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0c0032;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_ActionBar_Menu. */
         public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0c001a;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_ActionBar_Subtitle. */
         public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0c0006;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse. */
         public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0c0008;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_ActionBar_Title. */
         public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0c0005;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse. */
         public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0c0007;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_ActionMode_Subtitle. */
         public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0c001e;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse. */
         public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0c0020;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_ActionMode_Title. */
         public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0c001d;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse. */
         public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0c001f;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_Base_ActionBar_Menu. */
         public static final int TextAppearance_AppCompat_Widget_Base_ActionBar_Menu=0x7f0c0054;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_Base_ActionBar_Subtitle. */
         public static final int TextAppearance_AppCompat_Widget_Base_ActionBar_Subtitle=0x7f0c0056;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_Base_ActionBar_Subtitle_Inverse. */
         public static final int TextAppearance_AppCompat_Widget_Base_ActionBar_Subtitle_Inverse=0x7f0c0058;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_Base_ActionBar_Title. */
         public static final int TextAppearance_AppCompat_Widget_Base_ActionBar_Title=0x7f0c0055;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_Base_ActionBar_Title_Inverse. */
         public static final int TextAppearance_AppCompat_Widget_Base_ActionBar_Title_Inverse=0x7f0c0057;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_Base_ActionMode_Subtitle. */
         public static final int TextAppearance_AppCompat_Widget_Base_ActionMode_Subtitle=0x7f0c0051;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_Base_ActionMode_Subtitle_Inverse. */
         public static final int TextAppearance_AppCompat_Widget_Base_ActionMode_Subtitle_Inverse=0x7f0c0053;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_Base_ActionMode_Title. */
         public static final int TextAppearance_AppCompat_Widget_Base_ActionMode_Title=0x7f0c0050;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_Base_ActionMode_Title_Inverse. */
         public static final int TextAppearance_AppCompat_Widget_Base_ActionMode_Title_Inverse=0x7f0c0052;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_Base_DropDownItem. */
         public static final int TextAppearance_AppCompat_Widget_Base_DropDownItem=0x7f0c0061;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_DropDownItem. */
         public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0c0021;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_PopupMenu_Large. */
         public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0c002e;
-        
-        /** The Constant TextAppearance_AppCompat_Widget_PopupMenu_Small. */
         public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0c002f;
-        
-        /** The Constant TextAppearance_Widget_AppCompat_Base_ExpandedMenu_Item. */
         public static final int TextAppearance_Widget_AppCompat_Base_ExpandedMenu_Item=0x7f0c0062;
-        
-        /** The Constant TextAppearance_Widget_AppCompat_ExpandedMenu_Item. */
         public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0c0028;
         /**  Themes in the "Theme.AppCompat" family will contain an action bar by default.
          If Holo themes are available on the current platform version they will be used.
@@ -2706,20 +1916,14 @@ containing a value of this type.
  Platform-independent theme providing an action bar in a dark-themed activity. 
          */
         public static final int Theme_AppCompat=0x7f0c0077;
-        
-        /**   Menu/item attributes. */
+        /**  Menu/item attributes 
+         */
         public static final int Theme_AppCompat_Base_CompactMenu=0x7f0c0083;
-        
-        /** The Constant Theme_AppCompat_Base_CompactMenu_Dialog. */
         public static final int Theme_AppCompat_Base_CompactMenu_Dialog=0x7f0c0084;
-        
-        /**   Menu/item attributes. */
+        /**  Menu/item attributes 
+         */
         public static final int Theme_AppCompat_CompactMenu=0x7f0c007c;
-        
-        /** The Constant Theme_AppCompat_CompactMenu_Dialog. */
         public static final int Theme_AppCompat_CompactMenu_Dialog=0x7f0c007d;
-        
-        /** The Constant Theme_AppCompat_DialogWhenLarge. */
         public static final int Theme_AppCompat_DialogWhenLarge=0x7f0c007a;
         /**  Platform-independent theme providing an action bar in a light-themed activity. 
          */
@@ -2727,24 +1931,16 @@ containing a value of this type.
         /**  Platform-independent theme providing an action bar in a dark-themed activity. 
          */
         public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0c0079;
-        
-        /** The Constant Theme_AppCompat_Light_DialogWhenLarge. */
         public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0c007b;
-        
-        /**   Base platform-dependent theme. */
+        /**  Base platform-dependent theme  
+         */
         public static final int Theme_Base=0x7f0c007e;
         /**  Base platform-dependent theme providing an action bar in a dark-themed activity. 
  Base platform-dependent theme providing an action bar in a dark-themed activity. 
          */
         public static final int Theme_Base_AppCompat=0x7f0c0080;
-        
-        /** The Constant Theme_Base_AppCompat_Dialog_FixedSize. */
         public static final int Theme_Base_AppCompat_Dialog_FixedSize=0x7f0c0087;
-        
-        /** The Constant Theme_Base_AppCompat_Dialog_Light_FixedSize. */
         public static final int Theme_Base_AppCompat_Dialog_Light_FixedSize=0x7f0c0088;
-        
-        /** The Constant Theme_Base_AppCompat_DialogWhenLarge. */
         public static final int Theme_Base_AppCompat_DialogWhenLarge=0x7f0c0085;
         /** 
         As we have defined the theme in values-large (for compat) and values-large takes precedence
@@ -2762,289 +1958,122 @@ containing a value of this type.
  Base platform-dependent theme providing a dark action bar in a light-themed activity. 
          */
         public static final int Theme_Base_AppCompat_Light_DarkActionBar=0x7f0c0082;
-        
-        /** The Constant Theme_Base_AppCompat_Light_DialogWhenLarge. */
         public static final int Theme_Base_AppCompat_Light_DialogWhenLarge=0x7f0c0086;
-        
-        /** The Constant Theme_Base_AppCompat_Light_DialogWhenLarge_Base. */
         public static final int Theme_Base_AppCompat_Light_DialogWhenLarge_Base=0x7f0c008a;
         /**  Base platform-dependent theme providing a light-themed activity. 
          */
         public static final int Theme_Base_Light=0x7f0c007f;
-        
-        /** The Constant WalletFragmentDefaultButtonTextAppearance. */
         public static final int WalletFragmentDefaultButtonTextAppearance=0x7f0c008d;
-        
-        /** The Constant WalletFragmentDefaultDetailsHeaderTextAppearance. */
         public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f0c008c;
-        
-        /** The Constant WalletFragmentDefaultDetailsTextAppearance. */
         public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f0c008b;
-        
-        /**            Default style of the wallet fragment that will be used if not set explicitly          when fragment is created. */
+        /** 
+         Default style of the wallet fragment that will be used if not set explicitly
+         when fragment is created
+    
+         */
         public static final int WalletFragmentDefaultStyle=0x7f0c008e;
         /**  Styles in here can be extended for customisation in your application. Each utilises
          one of the Base styles. If Holo themes are available on the current platform version
          they will be used instead of the compat styles. 
          */
         public static final int Widget_AppCompat_ActionBar=0x7f0c0000;
-        
-        /** The Constant Widget_AppCompat_ActionBar_Solid. */
         public static final int Widget_AppCompat_ActionBar_Solid=0x7f0c0002;
-        
-        /** The Constant Widget_AppCompat_ActionBar_TabBar. */
         public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0c0011;
-        
-        /** The Constant Widget_AppCompat_ActionBar_TabText. */
         public static final int Widget_AppCompat_ActionBar_TabText=0x7f0c0017;
-        
-        /** The Constant Widget_AppCompat_ActionBar_TabView. */
         public static final int Widget_AppCompat_ActionBar_TabView=0x7f0c0014;
-        
-        /** The Constant Widget_AppCompat_ActionButton. */
         public static final int Widget_AppCompat_ActionButton=0x7f0c000b;
-        
-        /** The Constant Widget_AppCompat_ActionButton_CloseMode. */
         public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0c000d;
-        
-        /** The Constant Widget_AppCompat_ActionButton_Overflow. */
         public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0c000f;
-        
-        /** The Constant Widget_AppCompat_ActionMode. */
         public static final int Widget_AppCompat_ActionMode=0x7f0c001b;
-        
-        /** The Constant Widget_AppCompat_ActivityChooserView. */
         public static final int Widget_AppCompat_ActivityChooserView=0x7f0c0038;
-        
-        /** The Constant Widget_AppCompat_AutoCompleteTextView. */
         public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0c0036;
-        
-        /** The Constant Widget_AppCompat_Base_ActionBar. */
         public static final int Widget_AppCompat_Base_ActionBar=0x7f0c003a;
-        
-        /** The Constant Widget_AppCompat_Base_ActionBar_Solid. */
         public static final int Widget_AppCompat_Base_ActionBar_Solid=0x7f0c003c;
-        
-        /** The Constant Widget_AppCompat_Base_ActionBar_TabBar. */
         public static final int Widget_AppCompat_Base_ActionBar_TabBar=0x7f0c0045;
-        
-        /** The Constant Widget_AppCompat_Base_ActionBar_TabText. */
         public static final int Widget_AppCompat_Base_ActionBar_TabText=0x7f0c004b;
-        
-        /** The Constant Widget_AppCompat_Base_ActionBar_TabView. */
         public static final int Widget_AppCompat_Base_ActionBar_TabView=0x7f0c0048;
-        
-        /**   Action Button Styles. */
+        /**  Action Button Styles 
+         */
         public static final int Widget_AppCompat_Base_ActionButton=0x7f0c003f;
-        
-        /** The Constant Widget_AppCompat_Base_ActionButton_CloseMode. */
         public static final int Widget_AppCompat_Base_ActionButton_CloseMode=0x7f0c0041;
-        
-        /** The Constant Widget_AppCompat_Base_ActionButton_Overflow. */
         public static final int Widget_AppCompat_Base_ActionButton_Overflow=0x7f0c0043;
-        
-        /** The Constant Widget_AppCompat_Base_ActionMode. */
         public static final int Widget_AppCompat_Base_ActionMode=0x7f0c004e;
-        
-        /** The Constant Widget_AppCompat_Base_ActivityChooserView. */
         public static final int Widget_AppCompat_Base_ActivityChooserView=0x7f0c0075;
-        
-        /**   AutoCompleteTextView styles (for SearchView). */
+        /**  AutoCompleteTextView styles (for SearchView) 
+         */
         public static final int Widget_AppCompat_Base_AutoCompleteTextView=0x7f0c0073;
-        
-        /** The Constant Widget_AppCompat_Base_DropDownItem_Spinner. */
         public static final int Widget_AppCompat_Base_DropDownItem_Spinner=0x7f0c005d;
-        
-        /**   Popup Menu. */
+        /**  Popup Menu 
+         */
         public static final int Widget_AppCompat_Base_ListPopupWindow=0x7f0c0065;
-        
-        /**   Spinner Widgets. */
+        /**  Spinner Widgets 
+         */
         public static final int Widget_AppCompat_Base_ListView_DropDown=0x7f0c005f;
-        
-        /** The Constant Widget_AppCompat_Base_ListView_Menu. */
         public static final int Widget_AppCompat_Base_ListView_Menu=0x7f0c0064;
-        
-        /** The Constant Widget_AppCompat_Base_PopupMenu. */
         public static final int Widget_AppCompat_Base_PopupMenu=0x7f0c0067;
-        
-        /** The Constant Widget_AppCompat_Base_ProgressBar. */
         public static final int Widget_AppCompat_Base_ProgressBar=0x7f0c005a;
-        
-        /**   Progress Bar. */
+        /**  Progress Bar 
+         */
         public static final int Widget_AppCompat_Base_ProgressBar_Horizontal=0x7f0c0059;
-        
-        /**   Action Bar Spinner Widgets. */
+        /**  Action Bar Spinner Widgets 
+         */
         public static final int Widget_AppCompat_Base_Spinner=0x7f0c005b;
-        
-        /** The Constant Widget_AppCompat_DropDownItem_Spinner. */
         public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0c0024;
-        
-        /** The Constant Widget_AppCompat_Light_ActionBar. */
         public static final int Widget_AppCompat_Light_ActionBar=0x7f0c0001;
-        
-        /** The Constant Widget_AppCompat_Light_ActionBar_Solid. */
         public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0c0003;
-        
-        /** The Constant Widget_AppCompat_Light_ActionBar_Solid_Inverse. */
         public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0c0004;
-        
-        /** The Constant Widget_AppCompat_Light_ActionBar_TabBar. */
         public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0c0012;
-        
-        /** The Constant Widget_AppCompat_Light_ActionBar_TabBar_Inverse. */
         public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0c0013;
-        
-        /** The Constant Widget_AppCompat_Light_ActionBar_TabText. */
         public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0c0018;
-        
-        /** The Constant Widget_AppCompat_Light_ActionBar_TabText_Inverse. */
         public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0c0019;
-        
-        /** The Constant Widget_AppCompat_Light_ActionBar_TabView. */
         public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0c0015;
-        
-        /** The Constant Widget_AppCompat_Light_ActionBar_TabView_Inverse. */
         public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0c0016;
-        
-        /** The Constant Widget_AppCompat_Light_ActionButton. */
         public static final int Widget_AppCompat_Light_ActionButton=0x7f0c000c;
-        
-        /** The Constant Widget_AppCompat_Light_ActionButton_CloseMode. */
         public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0c000e;
-        
-        /** The Constant Widget_AppCompat_Light_ActionButton_Overflow. */
         public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0c0010;
-        
-        /** The Constant Widget_AppCompat_Light_ActionMode_Inverse. */
         public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0c001c;
-        
-        /** The Constant Widget_AppCompat_Light_ActivityChooserView. */
         public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0c0039;
-        
-        /** The Constant Widget_AppCompat_Light_AutoCompleteTextView. */
         public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0c0037;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ActionBar. */
         public static final int Widget_AppCompat_Light_Base_ActionBar=0x7f0c003b;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ActionBar_Solid. */
         public static final int Widget_AppCompat_Light_Base_ActionBar_Solid=0x7f0c003d;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ActionBar_Solid_Inverse. */
         public static final int Widget_AppCompat_Light_Base_ActionBar_Solid_Inverse=0x7f0c003e;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ActionBar_TabBar. */
         public static final int Widget_AppCompat_Light_Base_ActionBar_TabBar=0x7f0c0046;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ActionBar_TabBar_Inverse. */
         public static final int Widget_AppCompat_Light_Base_ActionBar_TabBar_Inverse=0x7f0c0047;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ActionBar_TabText. */
         public static final int Widget_AppCompat_Light_Base_ActionBar_TabText=0x7f0c004c;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ActionBar_TabText_Inverse. */
         public static final int Widget_AppCompat_Light_Base_ActionBar_TabText_Inverse=0x7f0c004d;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ActionBar_TabView. */
         public static final int Widget_AppCompat_Light_Base_ActionBar_TabView=0x7f0c0049;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ActionBar_TabView_Inverse. */
         public static final int Widget_AppCompat_Light_Base_ActionBar_TabView_Inverse=0x7f0c004a;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ActionButton. */
         public static final int Widget_AppCompat_Light_Base_ActionButton=0x7f0c0040;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ActionButton_CloseMode. */
         public static final int Widget_AppCompat_Light_Base_ActionButton_CloseMode=0x7f0c0042;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ActionButton_Overflow. */
         public static final int Widget_AppCompat_Light_Base_ActionButton_Overflow=0x7f0c0044;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ActionMode_Inverse. */
         public static final int Widget_AppCompat_Light_Base_ActionMode_Inverse=0x7f0c004f;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ActivityChooserView. */
         public static final int Widget_AppCompat_Light_Base_ActivityChooserView=0x7f0c0076;
-        
-        /** The Constant Widget_AppCompat_Light_Base_AutoCompleteTextView. */
         public static final int Widget_AppCompat_Light_Base_AutoCompleteTextView=0x7f0c0074;
-        
-        /** The Constant Widget_AppCompat_Light_Base_DropDownItem_Spinner. */
         public static final int Widget_AppCompat_Light_Base_DropDownItem_Spinner=0x7f0c005e;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ListPopupWindow. */
         public static final int Widget_AppCompat_Light_Base_ListPopupWindow=0x7f0c0066;
-        
-        /** The Constant Widget_AppCompat_Light_Base_ListView_DropDown. */
         public static final int Widget_AppCompat_Light_Base_ListView_DropDown=0x7f0c0060;
-        
-        /** The Constant Widget_AppCompat_Light_Base_PopupMenu. */
         public static final int Widget_AppCompat_Light_Base_PopupMenu=0x7f0c0068;
-        
-        /** The Constant Widget_AppCompat_Light_Base_Spinner. */
         public static final int Widget_AppCompat_Light_Base_Spinner=0x7f0c005c;
-        
-        /** The Constant Widget_AppCompat_Light_DropDownItem_Spinner. */
         public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0c0025;
-        
-        /** The Constant Widget_AppCompat_Light_ListPopupWindow. */
         public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0c002a;
-        
-        /** The Constant Widget_AppCompat_Light_ListView_DropDown. */
         public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0c0027;
-        
-        /** The Constant Widget_AppCompat_Light_PopupMenu. */
         public static final int Widget_AppCompat_Light_PopupMenu=0x7f0c002c;
-        
-        /** The Constant Widget_AppCompat_Light_Spinner_DropDown_ActionBar. */
         public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0c0023;
-        
-        /** The Constant Widget_AppCompat_ListPopupWindow. */
         public static final int Widget_AppCompat_ListPopupWindow=0x7f0c0029;
-        
-        /** The Constant Widget_AppCompat_ListView_DropDown. */
         public static final int Widget_AppCompat_ListView_DropDown=0x7f0c0026;
-        
-        /** The Constant Widget_AppCompat_ListView_Menu. */
         public static final int Widget_AppCompat_ListView_Menu=0x7f0c002d;
-        
-        /** The Constant Widget_AppCompat_PopupMenu. */
         public static final int Widget_AppCompat_PopupMenu=0x7f0c002b;
-        
-        /** The Constant Widget_AppCompat_ProgressBar. */
         public static final int Widget_AppCompat_ProgressBar=0x7f0c000a;
-        
-        /** The Constant Widget_AppCompat_ProgressBar_Horizontal. */
         public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0c0009;
-        
-        /** The Constant Widget_AppCompat_Spinner_DropDown_ActionBar. */
         public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0c0022;
     }
-    
-    /**
-     * The Class xml.
-     */
     public static final class xml {
-        
-        /** The Constant pref_data_sync. */
         public static final int pref_data_sync=0x7f050000;
-        
-        /** The Constant pref_general. */
         public static final int pref_general=0x7f050001;
-        
-        /** The Constant pref_headers. */
         public static final int pref_headers=0x7f050002;
-        
-        /** The Constant pref_messaging. */
         public static final int pref_messaging=0x7f050003;
-        
-        /** The Constant pref_notification. */
         public static final int pref_notification=0x7f050004;
     }
-    
-    /**
-     * The Class styleable.
-     */
     public static final class styleable {
         /**  ============================================ 
  Attributes used to style the Action Bar.
@@ -3107,321 +2136,283 @@ containing a value of this type.
             0x7f010031, 0x7f010032, 0x7f010033, 0x7f010034,
             0x7f010035, 0x7f010036, 0x7f010037
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a background drawable for the action bar. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:background
-         */
+          <p>
+          @attr description
+           Specifies a background drawable for the action bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:background
+        */
         public static final int ActionBar_background = 10;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a background drawable for the bottom component of a split action bar. 
-         * 
-         * 
-         *           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-         * "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:backgroundSplit
-         */
+          <p>
+          @attr description
+           Specifies a background drawable for the bottom component of a split action bar. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:backgroundSplit
+        */
         public static final int ActionBar_backgroundSplit = 12;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a background drawable for a second stacked row of the action bar. 
-         * 
-         * 
-         *           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-         * "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:backgroundStacked
-         */
+          <p>
+          @attr description
+           Specifies a background drawable for a second stacked row of the action bar. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:backgroundStacked
+        */
         public static final int ActionBar_backgroundStacked = 11;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a layout for custom navigation. Overrides navigationMode. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:customNavigationLayout
-         */
+          <p>
+          @attr description
+           Specifies a layout for custom navigation. Overrides navigationMode. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:customNavigationLayout
+        */
         public static final int ActionBar_customNavigationLayout = 13;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Options affecting how the action bar is displayed. 
-         * 
-         * 
-         *           <p>Must be one or more (separated by '|') of the following constant values.</p>
-         * <table>
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-         * <tr><td><code>useLogo</code></td><td>0x1</td><td></td></tr>
-         * <tr><td><code>showHome</code></td><td>0x2</td><td></td></tr>
-         * <tr><td><code>homeAsUp</code></td><td>0x4</td><td></td></tr>
-         * <tr><td><code>showTitle</code></td><td>0x8</td><td></td></tr>
-         * <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
-         * <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
-         * </table>
-         *           <p>This is a private symbol.
-         * @attr name android:displayOptions
-         */
+          <p>
+          @attr description
+           Options affecting how the action bar is displayed. 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>useLogo</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>showHome</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>homeAsUp</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>showTitle</code></td><td>0x8</td><td></td></tr>
+<tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:displayOptions
+        */
         public static final int ActionBar_displayOptions = 3;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies the drawable used for item dividers. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:divider
-         */
+          <p>
+          @attr description
+           Specifies the drawable used for item dividers. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:divider
+        */
         public static final int ActionBar_divider = 9;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a fixed height. 
-         * 
-         * 
-         *           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:height
-         */
+          <p>
+          @attr description
+           Specifies a fixed height. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:height
+        */
         public static final int ActionBar_height = 1;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a layout to use for the "home" section of the action bar. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:homeLayout
-         */
+          <p>
+          @attr description
+           Specifies a layout to use for the "home" section of the action bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:homeLayout
+        */
         public static final int ActionBar_homeLayout = 14;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies the drawable used for the application icon. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:icon
-         */
+          <p>
+          @attr description
+           Specifies the drawable used for the application icon. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:icon
+        */
         public static final int ActionBar_icon = 7;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a style resource to use for an indeterminate progress spinner. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:indeterminateProgressStyle
-         */
+          <p>
+          @attr description
+           Specifies a style resource to use for an indeterminate progress spinner. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:indeterminateProgressStyle
+        */
         public static final int ActionBar_indeterminateProgressStyle = 16;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies padding that should be applied to the left and right sides of
-         *              system-provided items in the bar. 
-         * 
-         * 
-         *           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:itemPadding
-         */
+          <p>
+          @attr description
+           Specifies padding that should be applied to the left and right sides of
+             system-provided items in the bar. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:itemPadding
+        */
         public static final int ActionBar_itemPadding = 18;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies the drawable used for the application logo. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:logo
-         */
+          <p>
+          @attr description
+           Specifies the drawable used for the application logo. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:logo
+        */
         public static final int ActionBar_logo = 8;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The type of navigation to use. 
-         * 
-         * 
-         *           <p>Must be one of the following constant values.</p>
-         * <table>
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-         * <tr><td><code>normal</code></td><td>0</td><td> Normal static title text </td></tr>
-         * <tr><td><code>listMode</code></td><td>1</td><td> The action bar will use a selection list for navigation. </td></tr>
-         * <tr><td><code>tabMode</code></td><td>2</td><td> The action bar will use a series of horizontal tabs for navigation. </td></tr>
-         * </table>
-         *           <p>This is a private symbol.
-         * @attr name android:navigationMode
-         */
+          <p>
+          @attr description
+           The type of navigation to use. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td> Normal static title text </td></tr>
+<tr><td><code>listMode</code></td><td>1</td><td> The action bar will use a selection list for navigation. </td></tr>
+<tr><td><code>tabMode</code></td><td>2</td><td> The action bar will use a series of horizontal tabs for navigation. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:navigationMode
+        */
         public static final int ActionBar_navigationMode = 2;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies the horizontal padding on either end for an embedded progress bar. 
-         * 
-         * 
-         *           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:progressBarPadding
-         */
+          <p>
+          @attr description
+           Specifies the horizontal padding on either end for an embedded progress bar. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:progressBarPadding
+        */
         public static final int ActionBar_progressBarPadding = 17;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a style resource to use for an embedded progress bar. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:progressBarStyle
-         */
+          <p>
+          @attr description
+           Specifies a style resource to use for an embedded progress bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:progressBarStyle
+        */
         public static final int ActionBar_progressBarStyle = 15;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies subtitle text used for navigationMode="normal" 
-         * 
-         * 
-         *           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:subtitle
-         */
+          <p>
+          @attr description
+           Specifies subtitle text used for navigationMode="normal" 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:subtitle
+        */
         public static final int ActionBar_subtitle = 4;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a style to use for subtitle text. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:subtitleTextStyle
-         */
+          <p>
+          @attr description
+           Specifies a style to use for subtitle text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:subtitleTextStyle
+        */
         public static final int ActionBar_subtitleTextStyle = 6;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies title text used for navigationMode="normal" 
-         * 
-         * 
-         *           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:title
-         */
+          <p>
+          @attr description
+           Specifies title text used for navigationMode="normal" 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:title
+        */
         public static final int ActionBar_title = 0;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a style to use for title text. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:titleTextStyle
-         */
+          <p>
+          @attr description
+           Specifies a style to use for title text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:titleTextStyle
+        */
         public static final int ActionBar_titleTextStyle = 5;
         /**  Valid LayoutParams for views placed in the action bar as custom views. 
            <p>Includes the following attributes:</p>
@@ -3503,105 +2494,97 @@ containing a value of this type.
           @attr name android:windowActionBarOverlay
         */
         public static final int ActionBarWindow_windowActionBarOverlay = 1;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            A fixed height for the window along the major axis of the screen,
-         *              that is, when in portrait. Can be either an absolute dimension
-         *              or a fraction of the screen size in that dimension. 
-         * 
-         * 
-         *           <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
-         * The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
-         * some parent container.
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:windowFixedHeightMajor
-         */
+          <p>
+          @attr description
+           A fixed height for the window along the major axis of the screen,
+             that is, when in portrait. Can be either an absolute dimension
+             or a fraction of the screen size in that dimension. 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:windowFixedHeightMajor
+        */
         public static final int ActionBarWindow_windowFixedHeightMajor = 6;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            A fixed height for the window along the minor axis of the screen,
-         *              that is, when in landscape. Can be either an absolute dimension
-         *              or a fraction of the screen size in that dimension. 
-         * 
-         * 
-         *           <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
-         * The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
-         * some parent container.
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:windowFixedHeightMinor
-         */
+          <p>
+          @attr description
+           A fixed height for the window along the minor axis of the screen,
+             that is, when in landscape. Can be either an absolute dimension
+             or a fraction of the screen size in that dimension. 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:windowFixedHeightMinor
+        */
         public static final int ActionBarWindow_windowFixedHeightMinor = 4;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            A fixed width for the window along the major axis of the screen,
-         *              that is, when in landscape. Can be either an absolute dimension
-         *              or a fraction of the screen size in that dimension. 
-         * 
-         * 
-         *           <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
-         * The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
-         * some parent container.
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:windowFixedWidthMajor
-         */
+          <p>
+          @attr description
+           A fixed width for the window along the major axis of the screen,
+             that is, when in landscape. Can be either an absolute dimension
+             or a fraction of the screen size in that dimension. 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:windowFixedWidthMajor
+        */
         public static final int ActionBarWindow_windowFixedWidthMajor = 3;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            A fixed width for the window along the minor axis of the screen,
-         *              that is, when in portrait. Can be either an absolute dimension
-         *              or a fraction of the screen size in that dimension. 
-         * 
-         * 
-         *           <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
-         * The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
-         * some parent container.
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:windowFixedWidthMinor
-         */
+          <p>
+          @attr description
+           A fixed width for the window along the minor axis of the screen,
+             that is, when in portrait. Can be either an absolute dimension
+             or a fraction of the screen size in that dimension. 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:windowFixedWidthMinor
+        */
         public static final int ActionBarWindow_windowFixedWidthMinor = 5;
         /**
           <p>This symbol is the offset where the {@link com.appsrox.instachat.R.attr#windowSplitActionBar}
@@ -3663,83 +2646,73 @@ containing a value of this type.
             0x7f010026, 0x7f01002a, 0x7f01002b, 0x7f01002f,
             0x7f010031
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a background for the action mode bar. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:background
-         */
+          <p>
+          @attr description
+           Specifies a background for the action mode bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:background
+        */
         public static final int ActionMode_background = 3;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a background for the split action mode bar. 
-         * 
-         * 
-         *           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-         * "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:backgroundSplit
-         */
+          <p>
+          @attr description
+           Specifies a background for the split action mode bar. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:backgroundSplit
+        */
         public static final int ActionMode_backgroundSplit = 4;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a fixed height for the action mode bar. 
-         * 
-         * 
-         *           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:height
-         */
+          <p>
+          @attr description
+           Specifies a fixed height for the action mode bar. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:height
+        */
         public static final int ActionMode_height = 0;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a style to use for subtitle text. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:subtitleTextStyle
-         */
+          <p>
+          @attr description
+           Specifies a style to use for subtitle text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:subtitleTextStyle
+        */
         public static final int ActionMode_subtitleTextStyle = 2;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Specifies a style to use for title text. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:titleTextStyle
-         */
+          <p>
+          @attr description
+           Specifies a style to use for title text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:titleTextStyle
+        */
         public static final int ActionMode_titleTextStyle = 1;
         /**  Attrbitutes for a ActivityChooserView. 
            <p>Includes the following attributes:</p>
@@ -3756,42 +2729,38 @@ containing a value of this type.
         public static final int[] ActivityChooserView = {
             0x7f01006a, 0x7f01006b
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The drawable to show in the button for expanding the activities overflow popup.
-         *              <strong>Note:</strong> Clients would like to set this drawable
-         *              as a clue about the action the chosen activity will perform. For
-         *              example, if share activity is to be chosen the drawable should
-         *              give a clue that sharing is to be performed.
-         *          
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:expandActivityOverflowButtonDrawable
-         */
+          <p>
+          @attr description
+           The drawable to show in the button for expanding the activities overflow popup.
+             <strong>Note:</strong> Clients would like to set this drawable
+             as a clue about the action the chosen activity will perform. For
+             example, if share activity is to be chosen the drawable should
+             give a clue that sharing is to be performed.
+         
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:expandActivityOverflowButtonDrawable
+        */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The maximal number of items initially shown in the activity list. 
-         * 
-         * 
-         *           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:initialActivityCount
-         */
+          <p>
+          @attr description
+           The maximal number of items initially shown in the activity list. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:initialActivityCount
+        */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AdsAttrs.
            <p>Includes the following attributes:</p>
@@ -3812,67 +2781,61 @@ containing a value of this type.
         public static final int[] AdsAttrs = {
             0x7f01006e, 0x7f01006f, 0x7f010070
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *           
-         *     The size of the ad. It must be one of BANNER, FULL_BANNER, LEADERBOARD,
-         *     MEDIUM_RECTANGLE, SMART_BANNER, WIDE_SKYSCRAPER, or
-         *     &lt;width&gt;x&lt;height&gt;.
-         *     
-         * 
-         * 
-         *           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:adSize
-         */
+          <p>
+          @attr description
+          
+    The size of the ad. It must be one of BANNER, FULL_BANNER, LEADERBOARD,
+    MEDIUM_RECTANGLE, SMART_BANNER, WIDE_SKYSCRAPER, or
+    &lt;width&gt;x&lt;height&gt;.
+    
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:adSize
+        */
         public static final int AdsAttrs_adSize = 0;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *           
-         *     A comma-separated list of the supported ad sizes. The sizes must be one of
-         *     BANNER, FULL_BANNER, LEADERBOARD, MEDIUM_RECTANGLE, SMART_BANNER,
-         *     WIDE_SKYSCRAPER, or &lt;width&gt;x&lt;height&gt;.
-         *     
-         * 
-         * 
-         *           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:adSizes
-         */
+          <p>
+          @attr description
+          
+    A comma-separated list of the supported ad sizes. The sizes must be one of
+    BANNER, FULL_BANNER, LEADERBOARD, MEDIUM_RECTANGLE, SMART_BANNER,
+    WIDE_SKYSCRAPER, or &lt;width&gt;x&lt;height&gt;.
+    
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:adSizes
+        */
         public static final int AdsAttrs_adSizes = 1;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The ad unit ID. 
-         * 
-         * 
-         *           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:adUnitId
-         */
+          <p>
+          @attr description
+           The ad unit ID. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:adUnitId
+        */
         public static final int AdsAttrs_adUnitId = 2;
         /** Attributes that can be used with a CompatTextView.
            <p>Includes the following attributes:</p>
@@ -3887,20 +2850,18 @@ containing a value of this type.
         public static final int[] CompatTextView = {
             0x7f01006d
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Present the text in ALL CAPS. This may use a small-caps form when available. 
-         * 
-         * 
-         *           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         * <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-         *           <p>This is a private symbol.
-         * @attr name android:textAllCaps
-         */
+          <p>
+          @attr description
+           Present the text in ALL CAPS. This may use a small-caps form when available. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>This is a private symbol.
+          @attr name android:textAllCaps
+        */
         public static final int CompatTextView_textAllCaps = 0;
         /** Attributes that can be used with a LinearLayoutICS.
            <p>Includes the following attributes:</p>
@@ -3919,62 +2880,56 @@ containing a value of this type.
         public static final int[] LinearLayoutICS = {
             0x7f01002e, 0x7f010055, 0x7f010056
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Drawable to use as a vertical divider between buttons. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:divider
-         */
+          <p>
+          @attr description
+           Drawable to use as a vertical divider between buttons. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:divider
+        */
         public static final int LinearLayoutICS_divider = 0;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Size of padding on either end of a divider. 
-         * 
-         * 
-         *           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:dividerPadding
-         */
+          <p>
+          @attr description
+           Size of padding on either end of a divider. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:dividerPadding
+        */
         public static final int LinearLayoutICS_dividerPadding = 2;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Setting for which dividers to show. 
-         * 
-         * 
-         *           <p>Must be one or more (separated by '|') of the following constant values.</p>
-         * <table>
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-         * <tr><td><code>none</code></td><td>0</td><td></td></tr>
-         * <tr><td><code>beginning</code></td><td>1</td><td></td></tr>
-         * <tr><td><code>middle</code></td><td>2</td><td></td></tr>
-         * <tr><td><code>end</code></td><td>4</td><td></td></tr>
-         * </table>
-         *           <p>This is a private symbol.
-         * @attr name android:showDividers
-         */
+          <p>
+          @attr description
+           Setting for which dividers to show. 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>beginning</code></td><td>1</td><td></td></tr>
+<tr><td><code>middle</code></td><td>2</td><td></td></tr>
+<tr><td><code>end</code></td><td>4</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:showDividers
+        */
         public static final int LinearLayoutICS_showDividers = 1;
         /** Attributes that can be used with a MapAttrs.
            <p>Includes the following attributes:</p>
@@ -4244,67 +3199,55 @@ containing a value of this type.
             0x0101000e, 0x010100d0, 0x01010194, 0x010101de,
             0x010101df, 0x010101e0
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Whether the items are capable of displaying a check mark. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_checkableBehavior}.
-         * @attr name android:android_checkableBehavior
-         */
+          <p>
+          @attr description
+           Whether the items are capable of displaying a check mark. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_checkableBehavior}.
+          @attr name android:android_checkableBehavior
+        */
         public static final int MenuGroup_android_checkableBehavior = 5;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Whether the items are enabled. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_enabled}.
-         * @attr name android:android_enabled
-         */
+          <p>
+          @attr description
+           Whether the items are enabled. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_enabled}.
+          @attr name android:android_enabled
+        */
         public static final int MenuGroup_android_enabled = 0;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The ID of the group. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_id}.
-         * @attr name android:android_id
-         */
+          <p>
+          @attr description
+           The ID of the group. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_id}.
+          @attr name android:android_id
+        */
         public static final int MenuGroup_android_id = 1;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The category applied to all items within this group.
-         *              (This will be or'ed with the orderInCategory attribute.) 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_menuCategory}.
-         * @attr name android:android_menuCategory
-         */
+          <p>
+          @attr description
+           The category applied to all items within this group.
+             (This will be or'ed with the orderInCategory attribute.) 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_menuCategory}.
+          @attr name android:android_menuCategory
+        */
         public static final int MenuGroup_android_menuCategory = 3;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The order within the category applied to all items within this group.
-         *              (This will be or'ed with the category attribute.) 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_orderInCategory}.
-         * @attr name android:android_orderInCategory
-         */
+          <p>
+          @attr description
+           The order within the category applied to all items within this group.
+             (This will be or'ed with the category attribute.) 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_orderInCategory}.
+          @attr name android:android_orderInCategory
+        */
         public static final int MenuGroup_android_orderInCategory = 4;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Whether the items are shown/visible. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_visible}.
-         * @attr name android:android_visible
-         */
+          <p>
+          @attr description
+           Whether the items are shown/visible. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_visible}.
+          @attr name android:android_visible
+        */
         public static final int MenuGroup_android_visible = 2;
         /**  Base attributes that are available to all Item objects. 
            <p>Includes the following attributes:</p>
@@ -4358,233 +3301,199 @@ containing a value of this type.
             0x0101026f, 0x7f01004d, 0x7f01004e, 0x7f01004f,
             0x7f010050
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            An optional layout to be used as an action view.
-         *              See {@link android.view.MenuItem#setActionView(android.view.View)}
-         *              for more info. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:actionLayout
-         */
+          <p>
+          @attr description
+           An optional layout to be used as an action view.
+             See {@link android.view.MenuItem#setActionView(android.view.View)}
+             for more info. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:actionLayout
+        */
         public static final int MenuItem_actionLayout = 14;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The name of an optional ActionProvider class to instantiate an action view
-         *              and perform operations such as default action for that menu item.
-         *              See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
-         *              for more info. 
-         * 
-         * 
-         *           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:actionProviderClass
-         */
+          <p>
+          @attr description
+           The name of an optional ActionProvider class to instantiate an action view
+             and perform operations such as default action for that menu item.
+             See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
+             for more info. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:actionProviderClass
+        */
         public static final int MenuItem_actionProviderClass = 16;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The name of an optional View class to instantiate and use as an
-         *              action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
-         *              for more info. 
-         * 
-         * 
-         *           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:actionViewClass
-         */
+          <p>
+          @attr description
+           The name of an optional View class to instantiate and use as an
+             action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
+             for more info. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:actionViewClass
+        */
         public static final int MenuItem_actionViewClass = 15;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The alphabetic shortcut key.  This is the shortcut when using a keyboard
-         *              with alphabetic keys. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_alphabeticShortcut}.
-         * @attr name android:android_alphabeticShortcut
-         */
+          <p>
+          @attr description
+           The alphabetic shortcut key.  This is the shortcut when using a keyboard
+             with alphabetic keys. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_alphabeticShortcut}.
+          @attr name android:android_alphabeticShortcut
+        */
         public static final int MenuItem_android_alphabeticShortcut = 9;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Whether the item is capable of displaying a check mark. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_checkable}.
-         * @attr name android:android_checkable
-         */
+          <p>
+          @attr description
+           Whether the item is capable of displaying a check mark. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_checkable}.
+          @attr name android:android_checkable
+        */
         public static final int MenuItem_android_checkable = 11;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Whether the item is checked.  Note that you must first have enabled checking with
-         *              the checkable attribute or else the check mark will not appear. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_checked}.
-         * @attr name android:android_checked
-         */
+          <p>
+          @attr description
+           Whether the item is checked.  Note that you must first have enabled checking with
+             the checkable attribute or else the check mark will not appear. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_checked}.
+          @attr name android:android_checked
+        */
         public static final int MenuItem_android_checked = 3;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Whether the item is enabled. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_enabled}.
-         * @attr name android:android_enabled
-         */
+          <p>
+          @attr description
+           Whether the item is enabled. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_enabled}.
+          @attr name android:android_enabled
+        */
         public static final int MenuItem_android_enabled = 1;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The icon associated with this item.  This icon will not always be shown, so
-         *              the title should be sufficient in describing this item. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_icon}.
-         * @attr name android:android_icon
-         */
+          <p>
+          @attr description
+           The icon associated with this item.  This icon will not always be shown, so
+             the title should be sufficient in describing this item. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_icon}.
+          @attr name android:android_icon
+        */
         public static final int MenuItem_android_icon = 0;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The ID of the item. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_id}.
-         * @attr name android:android_id
-         */
+          <p>
+          @attr description
+           The ID of the item. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_id}.
+          @attr name android:android_id
+        */
         public static final int MenuItem_android_id = 2;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The category applied to the item.
-         *              (This will be or'ed with the orderInCategory attribute.) 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_menuCategory}.
-         * @attr name android:android_menuCategory
-         */
+          <p>
+          @attr description
+           The category applied to the item.
+             (This will be or'ed with the orderInCategory attribute.) 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_menuCategory}.
+          @attr name android:android_menuCategory
+        */
         public static final int MenuItem_android_menuCategory = 5;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The numeric shortcut key.  This is the shortcut when using a numeric (e.g., 12-key)
-         *              keyboard. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_numericShortcut}.
-         * @attr name android:android_numericShortcut
-         */
+          <p>
+          @attr description
+           The numeric shortcut key.  This is the shortcut when using a numeric (e.g., 12-key)
+             keyboard. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_numericShortcut}.
+          @attr name android:android_numericShortcut
+        */
         public static final int MenuItem_android_numericShortcut = 10;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Name of a method on the Context used to inflate the menu that will be
-         *              called when the item is clicked. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_onClick}.
-         * @attr name android:android_onClick
-         */
+          <p>
+          @attr description
+           Name of a method on the Context used to inflate the menu that will be
+             called when the item is clicked. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_onClick}.
+          @attr name android:android_onClick
+        */
         public static final int MenuItem_android_onClick = 12;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The order within the category applied to the item.
-         *              (This will be or'ed with the category attribute.) 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_orderInCategory}.
-         * @attr name android:android_orderInCategory
-         */
+          <p>
+          @attr description
+           The order within the category applied to the item.
+             (This will be or'ed with the category attribute.) 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_orderInCategory}.
+          @attr name android:android_orderInCategory
+        */
         public static final int MenuItem_android_orderInCategory = 6;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The title associated with the item. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_title}.
-         * @attr name android:android_title
-         */
+          <p>
+          @attr description
+           The title associated with the item. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_title}.
+          @attr name android:android_title
+        */
         public static final int MenuItem_android_title = 7;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The condensed title associated with the item.  This is used in situations where the
-         *              normal title may be too long to be displayed. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_titleCondensed}.
-         * @attr name android:android_titleCondensed
-         */
+          <p>
+          @attr description
+           The condensed title associated with the item.  This is used in situations where the
+             normal title may be too long to be displayed. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_titleCondensed}.
+          @attr name android:android_titleCondensed
+        */
         public static final int MenuItem_android_titleCondensed = 8;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Whether the item is shown/visible. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_visible}.
-         * @attr name android:android_visible
-         */
+          <p>
+          @attr description
+           Whether the item is shown/visible. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_visible}.
+          @attr name android:android_visible
+        */
         public static final int MenuItem_android_visible = 4;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            How this item should display in the Action Bar, if present. 
-         * 
-         * 
-         *           <p>Must be one or more (separated by '|') of the following constant values.</p>
-         * <table>
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-         * <tr><td><code>never</code></td><td>0</td><td> Never show this item in an action bar, show it in the overflow menu instead.
-         *                  Mutually exclusive with "ifRoom" and "always". </td></tr>
-         * <tr><td><code>ifRoom</code></td><td>1</td><td> Show this item in an action bar if there is room for it as determined
-         *                  by the system. Favor this option over "always" where possible.
-         *                  Mutually exclusive with "never" and "always". </td></tr>
-         * <tr><td><code>always</code></td><td>2</td><td> Always show this item in an actionbar, even if it would override
-         *                  the system's limits of how much stuff to put there. This may make
-         *                  your action bar look bad on some screens. In most cases you should
-         *                  use "ifRoom" instead. Mutually exclusive with "ifRoom" and "never". </td></tr>
-         * <tr><td><code>withText</code></td><td>4</td><td> When this item is shown as an action in the action bar, show a text
-         *                  label with it even if it has an icon representation. </td></tr>
-         * <tr><td><code>collapseActionView</code></td><td>8</td><td> This item's action view collapses to a normal menu
-         *                  item. When expanded, the action view takes over a
-         *                  larger segment of its container. </td></tr>
-         * </table>
-         *           <p>This is a private symbol.
-         * @attr name android:showAsAction
-         */
+          <p>
+          @attr description
+           How this item should display in the Action Bar, if present. 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>never</code></td><td>0</td><td> Never show this item in an action bar, show it in the overflow menu instead.
+                 Mutually exclusive with "ifRoom" and "always". </td></tr>
+<tr><td><code>ifRoom</code></td><td>1</td><td> Show this item in an action bar if there is room for it as determined
+                 by the system. Favor this option over "always" where possible.
+                 Mutually exclusive with "never" and "always". </td></tr>
+<tr><td><code>always</code></td><td>2</td><td> Always show this item in an actionbar, even if it would override
+                 the system's limits of how much stuff to put there. This may make
+                 your action bar look bad on some screens. In most cases you should
+                 use "ifRoom" instead. Mutually exclusive with "ifRoom" and "never". </td></tr>
+<tr><td><code>withText</code></td><td>4</td><td> When this item is shown as an action in the action bar, show a text
+                 label with it even if it has an icon representation. </td></tr>
+<tr><td><code>collapseActionView</code></td><td>8</td><td> This item's action view collapses to a normal menu
+                 item. When expanded, the action view takes over a
+                 larger segment of its container. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:showAsAction
+        */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
            <p>Includes the following attributes:</p>
@@ -4612,87 +3521,71 @@ containing a value of this type.
          */
         public static final int[] MenuView = {
             0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
-            0x0101012f, 0x01010130, 0x01010131, 0x010103ea
+            0x0101012f, 0x01010130, 0x01010131, 0x0101040c
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Default background for the menu header. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_headerBackground}.
-         * @attr name android:android_headerBackground
-         */
+          <p>
+          @attr description
+           Default background for the menu header. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_headerBackground}.
+          @attr name android:android_headerBackground
+        */
         public static final int MenuView_android_headerBackground = 4;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Default horizontal divider between rows of menu items. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_horizontalDivider}.
-         * @attr name android:android_horizontalDivider
-         */
+          <p>
+          @attr description
+           Default horizontal divider between rows of menu items. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_horizontalDivider}.
+          @attr name android:android_horizontalDivider
+        */
         public static final int MenuView_android_horizontalDivider = 2;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Default background for each menu item. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_itemBackground}.
-         * @attr name android:android_itemBackground
-         */
+          <p>
+          @attr description
+           Default background for each menu item. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_itemBackground}.
+          @attr name android:android_itemBackground
+        */
         public static final int MenuView_android_itemBackground = 5;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Default disabled icon alpha for each menu item that shows an icon. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_itemIconDisabledAlpha}.
-         * @attr name android:android_itemIconDisabledAlpha
-         */
+          <p>
+          @attr description
+           Default disabled icon alpha for each menu item that shows an icon. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_itemIconDisabledAlpha}.
+          @attr name android:android_itemIconDisabledAlpha
+        */
         public static final int MenuView_android_itemIconDisabledAlpha = 6;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Default appearance of menu item text. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_itemTextAppearance}.
-         * @attr name android:android_itemTextAppearance
-         */
+          <p>
+          @attr description
+           Default appearance of menu item text. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_itemTextAppearance}.
+          @attr name android:android_itemTextAppearance
+        */
         public static final int MenuView_android_itemTextAppearance = 1;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Whether space should be reserved in layout when an icon is missing. 
-         *           <p>This is a private symbol.
-         * @attr name android:android_preserveIconSpacing
-         */
+          <p>
+          @attr description
+           Whether space should be reserved in layout when an icon is missing. 
+          <p>This is a private symbol.
+          @attr name android:android_preserveIconSpacing
+        */
         public static final int MenuView_android_preserveIconSpacing = 7;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Default vertical divider between menu items. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_verticalDivider}.
-         * @attr name android:android_verticalDivider
-         */
+          <p>
+          @attr description
+           Default vertical divider between menu items. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_verticalDivider}.
+          @attr name android:android_verticalDivider
+        */
         public static final int MenuView_android_verticalDivider = 3;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Default animations for the menu. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_windowAnimationStyle}.
-         * @attr name android:android_windowAnimationStyle
-         */
+          <p>
+          @attr description
+           Default animations for the menu. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_windowAnimationStyle}.
+          @attr name android:android_windowAnimationStyle
+        */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /** Attributes that can be used with a SearchView.
            <p>Includes the following attributes:</p>
@@ -4716,72 +3609,62 @@ containing a value of this type.
             0x0101011f, 0x01010220, 0x01010264, 0x7f01005a,
             0x7f01005b
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The IME options to set on the query text field. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_imeOptions}.
-         * @attr name android:android_imeOptions
-         */
+          <p>
+          @attr description
+           The IME options to set on the query text field. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_imeOptions}.
+          @attr name android:android_imeOptions
+        */
         public static final int SearchView_android_imeOptions = 2;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The input type to set on the query text field. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_inputType}.
-         * @attr name android:android_inputType
-         */
+          <p>
+          @attr description
+           The input type to set on the query text field. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_inputType}.
+          @attr name android:android_inputType
+        */
         public static final int SearchView_android_inputType = 1;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            An optional maximum width of the SearchView. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_maxWidth}.
-         * @attr name android:android_maxWidth
-         */
+          <p>
+          @attr description
+           An optional maximum width of the SearchView. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_maxWidth}.
+          @attr name android:android_maxWidth
+        */
         public static final int SearchView_android_maxWidth = 0;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The default state of the SearchView. If true, it will be iconified when not in
-         *              use and expanded when clicked. 
-         * 
-         * 
-         *           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:iconifiedByDefault
-         */
+          <p>
+          @attr description
+           The default state of the SearchView. If true, it will be iconified when not in
+             use and expanded when clicked. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:iconifiedByDefault
+        */
         public static final int SearchView_iconifiedByDefault = 3;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            An optional query hint string to be displayed in the empty query field. 
-         * 
-         * 
-         *           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:queryHint
-         */
+          <p>
+          @attr description
+           An optional query hint string to be displayed in the empty query field. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:queryHint
+        */
         public static final int SearchView_queryHint = 4;
         /** Attributes that can be used with a Spinner.
            <p>Includes the following attributes:</p>
@@ -4820,138 +3703,118 @@ containing a value of this type.
             0x010102ac, 0x010102ad, 0x7f010051, 0x7f010052,
             0x7f010053, 0x7f010054
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Horizontal offset from the spinner widget for positioning the dropdown
-         *              in spinnerMode="dropdown". 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_dropDownHorizontalOffset}.
-         * @attr name android:android_dropDownHorizontalOffset
-         */
+          <p>
+          @attr description
+           Horizontal offset from the spinner widget for positioning the dropdown
+             in spinnerMode="dropdown". 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_dropDownHorizontalOffset}.
+          @attr name android:android_dropDownHorizontalOffset
+        */
         public static final int Spinner_android_dropDownHorizontalOffset = 4;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            List selector to use for spinnerMode="dropdown" display. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_dropDownSelector}.
-         * @attr name android:android_dropDownSelector
-         */
+          <p>
+          @attr description
+           List selector to use for spinnerMode="dropdown" display. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_dropDownSelector}.
+          @attr name android:android_dropDownSelector
+        */
         public static final int Spinner_android_dropDownSelector = 1;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Vertical offset from the spinner widget for positioning the dropdown in
-         *              spinnerMode="dropdown". 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_dropDownVerticalOffset}.
-         * @attr name android:android_dropDownVerticalOffset
-         */
+          <p>
+          @attr description
+           Vertical offset from the spinner widget for positioning the dropdown in
+             spinnerMode="dropdown". 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_dropDownVerticalOffset}.
+          @attr name android:android_dropDownVerticalOffset
+        */
         public static final int Spinner_android_dropDownVerticalOffset = 5;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Width of the dropdown in spinnerMode="dropdown". 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_dropDownWidth}.
-         * @attr name android:android_dropDownWidth
-         */
+          <p>
+          @attr description
+           Width of the dropdown in spinnerMode="dropdown". 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_dropDownWidth}.
+          @attr name android:android_dropDownWidth
+        */
         public static final int Spinner_android_dropDownWidth = 3;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Gravity setting for positioning the currently selected item. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_gravity}.
-         * @attr name android:android_gravity
-         */
+          <p>
+          @attr description
+           Gravity setting for positioning the currently selected item. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_gravity}.
+          @attr name android:android_gravity
+        */
         public static final int Spinner_android_gravity = 0;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Background drawable to use for the dropdown in spinnerMode="dropdown". 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_popupBackground}.
-         * @attr name android:android_popupBackground
-         */
+          <p>
+          @attr description
+           Background drawable to use for the dropdown in spinnerMode="dropdown". 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_popupBackground}.
+          @attr name android:android_popupBackground
+        */
         public static final int Spinner_android_popupBackground = 2;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Whether this spinner should mark child views as enabled/disabled when
-         *              the spinner itself is enabled/disabled. 
-         * 
-         * 
-         *           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:disableChildrenWhenDisabled
-         */
+          <p>
+          @attr description
+           Whether this spinner should mark child views as enabled/disabled when
+             the spinner itself is enabled/disabled. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:disableChildrenWhenDisabled
+        */
         public static final int Spinner_disableChildrenWhenDisabled = 9;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Reference to a layout to use for displaying a prompt in the dropdown for
-         *              spinnerMode="dropdown". This layout must contain a TextView with the id
-         *              {@code @android:id/text1} to be populated with the prompt text. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:popupPromptView
-         */
+          <p>
+          @attr description
+           Reference to a layout to use for displaying a prompt in the dropdown for
+             spinnerMode="dropdown". This layout must contain a TextView with the id
+             {@code @android:id/text1} to be populated with the prompt text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:popupPromptView
+        */
         public static final int Spinner_popupPromptView = 8;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The prompt to display when the spinner's dialog is shown. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:prompt
-         */
+          <p>
+          @attr description
+           The prompt to display when the spinner's dialog is shown. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:prompt
+        */
         public static final int Spinner_prompt = 6;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Display mode for spinner options. 
-         * 
-         * 
-         *           <p>Must be one of the following constant values.</p>
-         * <table>
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-         * <tr><td><code>dialog</code></td><td>0</td><td> Spinner options will be presented to the user as a dialog window. </td></tr>
-         * <tr><td><code>dropdown</code></td><td>1</td><td> Spinner options will be presented to the user as an inline dropdown
-         *                  anchored to the spinner widget itself. </td></tr>
-         * </table>
-         *           <p>This is a private symbol.
-         * @attr name android:spinnerMode
-         */
+          <p>
+          @attr description
+           Display mode for spinner options. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>dialog</code></td><td>0</td><td> Spinner options will be presented to the user as a dialog window. </td></tr>
+<tr><td><code>dropdown</code></td><td>1</td><td> Spinner options will be presented to the user as an inline dropdown
+                 anchored to the spinner widget itself. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:spinnerMode
+        */
         public static final int Spinner_spinnerMode = 7;
         /**  These are the standard attributes that make up a complete theme. 
            <p>Includes the following attributes:</p>
@@ -4977,101 +3840,89 @@ containing a value of this type.
             0x7f010047, 0x7f010048, 0x7f010049, 0x7f01004a,
             0x7f01004b, 0x7f01004c
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Default ActionBar dropdown style. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:actionDropDownStyle
-         */
+          <p>
+          @attr description
+           Default ActionBar dropdown style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:actionDropDownStyle
+        */
         public static final int Theme_actionDropDownStyle = 0;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            The preferred item height for dropdown lists. 
-         * 
-         * 
-         *           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:dropdownListPreferredItemHeight
-         */
+          <p>
+          @attr description
+           The preferred item height for dropdown lists. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:dropdownListPreferredItemHeight
+        */
         public static final int Theme_dropdownListPreferredItemHeight = 1;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Drawable used as a background for selected list items. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:listChoiceBackgroundIndicator
-         */
+          <p>
+          @attr description
+           Drawable used as a background for selected list items. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:listChoiceBackgroundIndicator
+        */
         public static final int Theme_listChoiceBackgroundIndicator = 5;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Default Panel Menu style. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:panelMenuListTheme
-         */
+          <p>
+          @attr description
+           Default Panel Menu style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:panelMenuListTheme
+        */
         public static final int Theme_panelMenuListTheme = 4;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Default Panel Menu width. 
-         * 
-         * 
-         *           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:panelMenuListWidth
-         */
+          <p>
+          @attr description
+           Default Panel Menu width. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:panelMenuListWidth
+        */
         public static final int Theme_panelMenuListWidth = 3;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Default PopupMenu style. 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:popupMenuStyle
-         */
+          <p>
+          @attr description
+           Default PopupMenu style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:popupMenuStyle
+        */
         public static final int Theme_popupMenuStyle = 2;
         /** Attributes that can be used with a View.
            <p>Includes the following attributes:</p>
@@ -5090,60 +3941,54 @@ containing a value of this type.
         public static final int[] View = {
             0x010100da, 0x7f010038, 0x7f010039
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Boolean that controls whether a view can take focus.  By default the user can not
-         *              move focus to a view; by setting this attribute to true the view is
-         *              allowed to take focus.  This value does not impact the behavior of
-         *              directly calling {@link android.view.View#requestFocus}, which will
-         *              always request focus regardless of this view.  It only impacts where
-         *              focus navigation will try to move focus. 
-         *           <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_focusable}.
-         * @attr name android:android_focusable
-         */
+          <p>
+          @attr description
+           Boolean that controls whether a view can take focus.  By default the user can not
+             move focus to a view; by setting this attribute to true the view is
+             allowed to take focus.  This value does not impact the behavior of
+             directly calling {@link android.view.View#requestFocus}, which will
+             always request focus regardless of this view.  It only impacts where
+             focus navigation will try to move focus. 
+          <p>This corresponds to the global attribute          resource symbol {@link com.appsrox.instachat.R.attr#android_focusable}.
+          @attr name android:android_focusable
+        */
         public static final int View_android_focusable = 0;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}. 
-         * 
-         * 
-         *           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:paddingEnd
-         */
+          <p>
+          @attr description
+           Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:paddingEnd
+        */
         public static final int View_paddingEnd = 2;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}. 
-         * 
-         * 
-         *           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:paddingStart
-         */
+          <p>
+          @attr description
+           Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:paddingStart
+        */
         public static final int View_paddingStart = 1;
         /**  Attributes for the WalletFragment &lt;fragment&gt; tag 
            <p>Includes the following attributes:</p>
@@ -5164,83 +4009,75 @@ containing a value of this type.
         public static final int[] WalletFragmentOptions = {
             0x7f01007f, 0x7f010080, 0x7f010081, 0x7f010082
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Google Wallet environment to use 
-         * 
-         * 
-         *           <p>Must be one of the following constant values.</p>
-         * <table>
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-         * <tr><td><code>production</code></td><td>1</td><td></td></tr>
-         * <tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
-         * <tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
-         * </table>
-         *           <p>This is a private symbol.
-         * @attr name android:environment
-         */
+          <p>
+          @attr description
+           Google Wallet environment to use 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>production</code></td><td>1</td><td></td></tr>
+<tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
+<tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:environment
+        */
         public static final int WalletFragmentOptions_environment = 1;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Fragment mode 
-         * 
-         * 
-         *           <p>Must be one of the following constant values.</p>
-         * <table>
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-         * <tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
-         * <tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
-         * </table>
-         *           <p>This is a private symbol.
-         * @attr name android:fragmentMode
-         */
+          <p>
+          @attr description
+           Fragment mode 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
+<tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:fragmentMode
+        */
         public static final int WalletFragmentOptions_fragmentMode = 3;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            A style resource specifing attributes to customize the look and feel of WalletFragment 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:fragmentStyle
-         */
+          <p>
+          @attr description
+           A style resource specifing attributes to customize the look and feel of WalletFragment 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:fragmentStyle
+        */
         public static final int WalletFragmentOptions_fragmentStyle = 2;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Theme to be used for the Wallet selector 
-         * 
-         * 
-         *           <p>Must be one of the following constant values.</p>
-         * <table>
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-         * <tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
-         * <tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
-         * </table>
-         *           <p>This is a private symbol.
-         * @attr name android:theme
-         */
+          <p>
+          @attr description
+           Theme to be used for the Wallet selector 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
+<tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:theme
+        */
         public static final int WalletFragmentOptions_theme = 0;
         /**  Attributes that may be specified in a style resource to customize the look and feel of
          WalletFragment 
@@ -5278,225 +4115,203 @@ containing a value of this type.
             0x7f010087, 0x7f010088, 0x7f010089, 0x7f01008a,
             0x7f01008b, 0x7f01008c, 0x7f01008d
         };
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Appearance of the buy button. Must be one of "classic", "grayscale" and "monochrome" 
-         * 
-         * 
-         *           <p>Must be one of the following constant values.</p>
-         * <table>
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-         * <tr><td><code>classic</code></td><td>1</td><td></td></tr>
-         * <tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
-         * <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
-         * </table>
-         *           <p>This is a private symbol.
-         * @attr name android:buyButtonAppearance
-         */
+          <p>
+          @attr description
+           Appearance of the buy button. Must be one of "classic", "grayscale" and "monochrome" 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>classic</code></td><td>1</td><td></td></tr>
+<tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
+<tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:buyButtonAppearance
+        */
         public static final int WalletFragmentStyle_buyButtonAppearance = 3;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Height of the buy button. This includes an 8dp padding (4dp on each side) used for
-         *              pressed and focused states of the button. The value can be a specific height, e.g.
-         *              "48dp", or special values "match_parent" and "wrap_content". 
-         * 
-         * 
-         *           <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         * <p>May be one of the following constant values.</p>
-         * <table>
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-         * <tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
-         * <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
-         * </table>
-         *           <p>This is a private symbol.
-         * @attr name android:buyButtonHeight
-         */
+          <p>
+          @attr description
+           Height of the buy button. This includes an 8dp padding (4dp on each side) used for
+             pressed and focused states of the button. The value can be a specific height, e.g.
+             "48dp", or special values "match_parent" and "wrap_content". 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
+<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:buyButtonHeight
+        */
         public static final int WalletFragmentStyle_buyButtonHeight = 0;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Text on the buy button. Must be one of "buy_with_google", "buy_now" and "book_now" 
-         * 
-         * 
-         *           <p>Must be one of the following constant values.</p>
-         * <table>
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-         * <tr><td><code>buy_with_google</code></td><td>1</td><td></td></tr>
-         * <tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
-         * <tr><td><code>book_now</code></td><td>3</td><td></td></tr>
-         * </table>
-         *           <p>This is a private symbol.
-         * @attr name android:buyButtonText
-         */
+          <p>
+          @attr description
+           Text on the buy button. Must be one of "buy_with_google", "buy_now" and "book_now" 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>buy_with_google</code></td><td>1</td><td></td></tr>
+<tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
+<tr><td><code>book_now</code></td><td>3</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:buyButtonText
+        */
         public static final int WalletFragmentStyle_buyButtonText = 2;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Width of the buy button. This includes an 8dp padding (4dp on each side) used for
-         *              pressed and focused states of the button. The value can be a specific width, e.g.
-         *              "300dp", or special values "match_parent" and "wrap_content". 
-         * 
-         * 
-         *           <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-         * Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-         * in (inches), mm (millimeters).
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         * <p>May be one of the following constant values.</p>
-         * <table>
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-         * <tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
-         * <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
-         * </table>
-         *           <p>This is a private symbol.
-         * @attr name android:buyButtonWidth
-         */
+          <p>
+          @attr description
+           Width of the buy button. This includes an 8dp padding (4dp on each side) used for
+             pressed and focused states of the button. The value can be a specific width, e.g.
+             "300dp", or special values "match_parent" and "wrap_content". 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
+<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:buyButtonWidth
+        */
         public static final int WalletFragmentStyle_buyButtonWidth = 1;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Masked wallet details background 
-         * 
-         * 
-         *           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-         * "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:maskedWalletDetailsBackground
-         */
+          <p>
+          @attr description
+           Masked wallet details background 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:maskedWalletDetailsBackground
+        */
         public static final int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            "Change" button background in masked wallet details view 
-         * 
-         * 
-         *           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-         * "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:maskedWalletDetailsButtonBackground
-         */
+          <p>
+          @attr description
+           "Change" button background in masked wallet details view 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:maskedWalletDetailsButtonBackground
+        */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            TextAppearance for the "Change" button in masked wallet details view 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:maskedWalletDetailsButtonTextAppearance
-         */
+          <p>
+          @attr description
+           TextAppearance for the "Change" button in masked wallet details view 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:maskedWalletDetailsButtonTextAppearance
+        */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            TextAppearance for headers describing masked wallet details 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:maskedWalletDetailsHeaderTextAppearance
-         */
+          <p>
+          @attr description
+           TextAppearance for headers describing masked wallet details 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:maskedWalletDetailsHeaderTextAppearance
+        */
         public static final int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Type of the wallet logo image in masked wallet details view 
-         * 
-         * 
-         *           <p>Must be one of the following constant values.</p>
-         * <table>
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <colgroup align="left" />
-         * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-         * <tr><td><code>classic</code></td><td>1</td><td></td></tr>
-         * <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
-         * </table>
-         *           <p>This is a private symbol.
-         * @attr name android:maskedWalletDetailsLogoImageType
-         */
+          <p>
+          @attr description
+           Type of the wallet logo image in masked wallet details view 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>classic</code></td><td>1</td><td></td></tr>
+<tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:maskedWalletDetailsLogoImageType
+        */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            Color of the Google Wallet logo text in masked wallet details view 
-         * 
-         * 
-         *           <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-         * "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-         * <p>This may also be a reference to a resource (in the form
-         * "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-         * theme attribute (in the form
-         * "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-         * containing a value of this type.
-         *           <p>This is a private symbol.
-         * @attr name android:maskedWalletDetailsLogoTextColor
-         */
+          <p>
+          @attr description
+           Color of the Google Wallet logo text in masked wallet details view 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:maskedWalletDetailsLogoTextColor
+        */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
-        
         /**
-         *           <p>.
-         *
-         * @attr description
-         *            TextAppearance for masked wallet details 
-         * 
-         * 
-         *           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-         * or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         *           <p>This is a private symbol.
-         * @attr name android:maskedWalletDetailsTextAppearance
-         */
+          <p>
+          @attr description
+           TextAppearance for masked wallet details 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:maskedWalletDetailsTextAppearance
+        */
         public static final int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
     };
 }

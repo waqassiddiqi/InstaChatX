@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Select Recepient(s): "
+            android:text="Select Recipient(s): "
             android:textColor="@android:color/white"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 

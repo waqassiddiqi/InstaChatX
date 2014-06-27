@@ -100,8 +100,8 @@ EditContactDialog.OnFragmentInteractionListener, OnClickListener {
 		msgEdit = (EditText) findViewById(R.id.msg_edit);
 		sendBtn = (Button) findViewById(R.id.send_btn);
 		
-		sendBtn.setOnClickListener(this);
-		
+		//Disable Send message button until GCM registration status is known
+		sendBtn.setOnClickListener(this);		
 		sendBtn.setEnabled(false);
 		
 		mProgress = new ProgressDialog(this);
@@ -152,6 +152,13 @@ EditContactDialog.OnFragmentInteractionListener, OnClickListener {
 
 		//register broadcast receiver to listen com.appsrox.instachat.REGISTER broadcasts
 		registerReceiver(registrationStatusReceiver, new IntentFilter(Common.ACTION_REGISTER));
+		
+		//Initialize GCM Util object, on initialization it checks if this application has already been
+		//registered with to send/receive GCM by checking the GCM registration ID in preference
+		//If GCM Registration ID isn't found in preference, make a call to GCM server to get a new registration ID
+		//then update the GAE server with this new ID along with the google email account associated with this application
+		//then send registration broadcast com.appsrox.instachat.REGISTER to notify receivers that application
+		//is not registered to send and receive GCM
 		gcmUtil = new GcmUtil(getApplicationContext());
 		
 		//Opens the gallery to select an image to upload
@@ -213,7 +220,9 @@ EditContactDialog.OnFragmentInteractionListener, OnClickListener {
 			dialog.show(getSupportFragmentManager(), "EditContactDialog");
 			return true;
 
+		//close the activity when user taps on back icon on actionbar	
 		case android.R.id.home:
+			
 			Intent intent = new Intent(this, MainActivity.class);
 			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 			startActivity(intent);
@@ -228,7 +237,9 @@ EditContactDialog.OnFragmentInteractionListener, OnClickListener {
 	@Override
 	public void onClick(View v) {
 		switch(v.getId()) {
-		case R.id.send_btn:
+		case R.id.send_btn:			
+			//Send message, in case if user has selected an image, it first uploads the image and then 
+			//send message on successful image
 			send(msgEdit.getText().toString());
 			msgEdit.setText(null);
 			break;
@@ -263,20 +274,34 @@ EditContactDialog.OnFragmentInteractionListener, OnClickListener {
 			
 			String errorMessage = "Unable to upload file";
 			
+			//Called on UI thread before performing background activity to prepare stuff like show dialog box to user
 			@Override
 			protected void onPreExecute() {
 				mProgress.show();
 			}
 			
+			//Runs in separate background thread
+			//First checks for the size of file being uploaded, if it is greater than 1MB, return with an error message
+			//that file is too large
+			//otherwise calls ServerUtilities.uplaod with path to file to upload and unique message id
+			//this message is then used to download this attachment from GAE server
 			@Override
 			protected String doInBackground(String... params) {
+				
+				//Return an error if filesize is greater than 1MB
 				if(Util.getFileSize(params[0]) >= 1024) {
 					errorMessage = "File is too large to be attached";
 					return null;
 				}
+				
+				//upload attachment of GAE server and return remote path to attachment
 				return ServerUtilities.uplaod(params[0], params[1]);
 			}
 			
+			//Runs on UI thread once background thread completes execution
+			//Closes the progress dialog indicating user that operation has been finished
+			//if uploading is successful, call sendMessage to send chat message request to GAE server
+			//otherwise display an error to user that attaching file has failed
 			@Override
 			protected void onPostExecute(String url) {
 				mProgress.cancel();
@@ -307,21 +332,29 @@ EditContactDialog.OnFragmentInteractionListener, OnClickListener {
 				String msg = "";
 				try {
 					
+					//construct new message object
 					Message message = new Message();
 					message.setMessage("{" + Common.getDisplayName() + "}" + text);
 					message.setSender(Common.getPreferredEmail());
 					message.getRecepient().add(profileEmail);
+					
+					//make it persitent message that is it won't self destroy
 					message.setTtl(-1);
+					
+					//set message type to unicast
 					message.setType(Message.UNICAST);
 					message.setUuid(messageId);
 					message.setAction(Message.ACTION_IM);
 					message.setAttachment(uploadedUrl);
 					
+					//deserialize Message object to json
 					Gson gson = new Gson();
 					String json = gson.toJson(message);
 					
+					//send chat request to GAE server
 					ServerUtilities.send(text, profileEmail, json);
 					
+					//after sending text message request to GAE server persist messages in local message table
 					ContentValues values = new ContentValues(2);
 					values.put(DataProvider.COL_TYPE,  MessageType.OUTGOING.ordinal());
 					values.put(DataProvider.COL_MESSAGE, text.replaceFirst("\\{.*\\}", ""));
@@ -363,9 +396,14 @@ EditContactDialog.OnFragmentInteractionListener, OnClickListener {
 	 */
 	private void send(final String text) {
 		
+		//generate new unique message ID, this ID is then used to delete message from all recipients
+		// and to download associated attachment
 		String uuid = java.util.UUID.randomUUID().toString().replaceAll("-", "");
 		
 		
+		//if user has selected an attachment, call upload method, this method will itself call sendMessage
+		//if uploading was successful
+		//otherwise if user hasn't selected any attachment call sendMessage to send chat message request to GAE
 		if(attachedFilePath != null && attachedFilePath.trim().length() > 0 && 
 				new File(attachedFilePath).exists()) {
 			
@@ -452,6 +490,8 @@ EditContactDialog.OnFragmentInteractionListener, OnClickListener {
 	private BroadcastReceiver registrationStatusReceiver = new  BroadcastReceiver() {
 		@Override
 		public void onReceive(Context context, Intent intent) {
+			//Check for registration status being passed by com.appsrox.instachat.REGISTER broadcast
+			//if registration is successful enables the send chat button
 			if (intent != null && Common.ACTION_REGISTER.equals(intent.getAction())) {
 				switch (intent.getIntExtra(Common.EXTRA_STATUS, 100)) {
 				case Common.STATUS_SUCCESS:

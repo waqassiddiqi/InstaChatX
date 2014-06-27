@@ -1,6 +1,3 @@
-/*
- * 
- */
 package com.appsrox.instachat;
 
 import java.io.File;
@@ -42,12 +39,12 @@ import com.appsrox.instachat.DataProvider.MessageType;
 import com.appsrox.instachat.client.GcmUtil;
 import com.appsrox.instachat.client.ServerUtilities;
 import com.appsrox.instachat.client.Util;
+import com.appsrox.instachat.model.Contact;
 import com.appsrox.instachat.model.Message;
 import com.google.gson.Gson;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class BroadcastActivity.
+ * The Class BroadcastActivity to send message to multiple contacts at once.
  */
 public class BroadcastActivity extends ActionBarActivity implements
 		SeekBar.OnSeekBarChangeListener {
@@ -61,8 +58,8 @@ public class BroadcastActivity extends ActionBarActivity implements
 	/** The list view. */
 	private ListView listView;
 	
-	/** The list. */
-	private List<String> list;
+	/** The list to hold all Contacts in profile table. */
+	private List<Contact> list;
 	
 	/** The b send all. */
 	private boolean bSendAll = false;
@@ -106,30 +103,41 @@ public class BroadcastActivity extends ActionBarActivity implements
 		
 		//register broadcast receiver to listen com.appsrox.instachat.REGISTER broadcasts
 		registerReceiver(registrationStatusReceiver, new IntentFilter(Common.ACTION_REGISTER));
+		
+		//Initialize GCM Util object, on initialization it checks if this application has already been
+		//registered with to send/receive GCM by checking the GCM registration ID in preference
+		//If GCM Registration ID isn't found in preference, make a call to GCM server to get a new registration ID
+		//then update the GAE server with this new ID along with the google email account associated with this application
+		//then send registration broadcast com.appsrox.instachat.REGISTER to notify receivers that application
+		//is not registered to send and receive GCM
 		gcmUtil = new GcmUtil(getApplicationContext());
 
 		mProgress = new ProgressDialog(this);
 		mProgress.setMessage("Uploading file...");
 		
-		//populate list of contacts
-		list = new ArrayList<String>();
-		list.add("All");
+		//populate list of contacts and display them in ListView
+		list = new ArrayList<Contact>();
+		list.add(new Contact("All", "All"));
 		Cursor c = getContentResolver().query(DataProvider.CONTENT_URI_PROFILE,
-				new String[] { DataProvider.COL_EMAIL }, null, null,
+				new String[] { DataProvider.COL_EMAIL, DataProvider.COL_NAME }, null, null,
 				DataProvider.COL_ID + " DESC");
 
+		//Iterate through each row of profile table, construct new object of Contact and add in list 
 		c.moveToFirst();
 		while (!c.isAfterLast()) {
-			list.add(c.getString(c.getColumnIndex(DataProvider.COL_EMAIL)));
+			list.add(new Contact(c.getString(c.getColumnIndex(DataProvider.COL_EMAIL)), 
+					c.getString(c.getColumnIndex(DataProvider.COL_NAME))));
 			c.moveToNext();
 		}
 
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+		//Bind list of Contact with ListView
+		ArrayAdapter<Contact> adapter = new ArrayAdapter<Contact>(this,
 				android.R.layout.simple_list_item_multiple_choice, list);
 
 		listView = (ListView) findViewById(R.id.listView);
 		listView.setAdapter(adapter);
 
+		//Disable Send message button until GCM registration status is known
 		btnSend = (Button) findViewById(R.id.send_btn);
 		btnSend.setEnabled(false);
 
@@ -149,10 +157,24 @@ public class BroadcastActivity extends ActionBarActivity implements
 					return;
 				}
 
-				upload(java.util.UUID.randomUUID().toString().replaceAll("-", ""), text);
+				String uuid = java.util.UUID.randomUUID().toString().replaceAll("-", "");
+				
+				if(attachedFilePath != null && attachedFilePath.trim().length() > 0 && 
+						new File(attachedFilePath).exists()) {
+					
+					//Calls upload method along with new generated unique message ID to upload attachement and send message
+					upload(uuid, text);
+					
+				} else {
+					sendMessage(uuid, text, "");
+					attachedFilePath = "";
+				}
+				
+				
 			}
 		});
 
+		//Checkbox to toogle expiry seekbar display
 		chkExpirable = (CheckBox) findViewById(R.id.chkExpirable);
 		chkExpirable.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
@@ -176,8 +198,14 @@ public class BroadcastActivity extends ActionBarActivity implements
 			
 			@Override
 			public void onClick(View v) {
+				
+				//create new intent with action to pick an item
 				Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
+				
+				//set the type of pick to an image, so by default selector opens pictures/image gallery
 				photoPickerIntent.setType("image/*");
+				
+				//start image picking activity with result so to get the file path once user has picked
 				startActivityForResult(photoPickerIntent, REQ_CODE_PICK_IMAGE); 
 			}
 		});
@@ -195,22 +223,34 @@ public class BroadcastActivity extends ActionBarActivity implements
 			
 			String errorMessage = "Unable to upload file";
 			
+			//Called on UI thread before performing background activity to prepare stuff like show dialog box to user
 			@Override
 			protected void onPreExecute() {
 				mProgress.show();
 			}
 			
+			//Runs in separate background thread
+			//First checks for the size of file being uploaded, if it is greater than 1MB, return with an error message
+			//that file is too large
+			//otherwise calls ServerUtilities.uplaod with path to file to upload and unique message id
+			//this message is then used to download this attachment from GAE server
 			@Override
 			protected String doInBackground(String... params) {
 				
+				//Return an error if filesize is greater than 1MB
 				if(Util.getFileSize(params[0]) >= 1024) {
 					errorMessage = "File is too large to be attached";
 					return null;
 				}
 				
+				//upload attachment of GAE server and return remote path to attachment
 				return ServerUtilities.uplaod(params[0], params[1]);
 			}
 			
+			//Runs on UI thread once background thread completes execution
+			//Closes the progress dialog indicating user that operation has been finished
+			//if uploading is successful, call sendMessage to send chat message request to GAE server
+			//otherwise display an error to user that attaching file has failed
 			@Override
 			protected void onPostExecute(String url) {
 				mProgress.cancel();
@@ -255,6 +295,9 @@ public class BroadcastActivity extends ActionBarActivity implements
 	private BroadcastReceiver registrationStatusReceiver = new BroadcastReceiver() {
 		@Override
 		public void onReceive(Context context, Intent intent) {
+			
+			//Check for registration status being passed by com.appsrox.instachat.REGISTER broadcast
+			//if registration is successful enables the send chat button
 			if (intent != null
 					&& Common.ACTION_REGISTER.equals(intent.getAction())) {
 				switch (intent.getIntExtra(Common.EXTRA_STATUS, 100)) {
@@ -278,6 +321,8 @@ public class BroadcastActivity extends ActionBarActivity implements
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
+		
+		//close the activity when user taps on back icon on actionbar
 		case android.R.id.home:
 			Intent intent = new Intent(this, MainActivity.class);
 			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -289,21 +334,28 @@ public class BroadcastActivity extends ActionBarActivity implements
 
 	/**
 	 * Construct and send message (a Message object) to server in json format.
-	 *
+	 * It iterates through all the items of ListView and add those with a selected checkbox is checked
+	 * to list of recipients
 	 * @param messageId the message id
 	 * @param text the text
 	 * @param uploadedUrl the uploaded url
 	 */
 	private void sendMessage(String messageId, String text, String uploadedUrl) {
+		
+		//construct new message object
 		final Message msg = new Message();
 		msg.setAction(Message.ACTION_IM);
-		msg.setMessage(text);
+		msg.setMessage("{" + Common.getDisplayName() + "}" + text);
 		
+		//set message type to broadcast
 		msg.setType(Message.BROADCAST);
 		msg.setUuid(messageId);
 		msg.setSender(Common.getPreferredEmail());
+		
+		//add attachment URL
 		msg.setAttachment(uploadedUrl);
 		
+		//set expiry time if it is self destroyable message
 		if(chkExpirable.isChecked() == false) {
 			msg.setTtl(-1);
 		} else {
@@ -312,28 +364,31 @@ public class BroadcastActivity extends ActionBarActivity implements
 		
 		msg.getRecepient().clear();
 
+		//populate recipient list with the selected contacts
 		SparseBooleanArray checkedPositions = listView
 				.getCheckedItemPositions();
 
 		for (int i = 0; i < listView.getCount(); i++) {
 			if (checkedPositions.get(i) == true) {
-				if (list.get(i).equals("All")) {
+				if ( ((Contact)list.get(i)).getDisplayName().equals("All")) {
 					bSendAll = true;
 					break;
 				}
 
 				if (list.get(i).equals(Common.getPreferredEmail()) == false)
-					msg.getRecepient().add(list.get(i));
+					msg.getRecepient().add(  ((Contact)list.get(i)).getEmail() );
 			}
 		}
 
 		if (bSendAll && list.size() > 1) {
 			for (int i = 1; i < list.size(); i++) {
 				if (Common.getPreferredEmail().equals(list.get(i)) == false)
-					msg.getRecepient().add(list.get(i));
+					msg.getRecepient().add( ((Contact)list.get(i)).getEmail() );
 			}
 		}
 
+		//if recipient list has some selected contacts proceed with sending
+		//request to GAE server to send chat message
 		if (msg.getRecepient().size() > 0) {
 
 			Gson gson = new Gson();
@@ -349,10 +404,11 @@ public class BroadcastActivity extends ActionBarActivity implements
 
 						ContentValues values;
 
+						//after sending text message request to GAE server persist messages in local message table
 						for (int i = 0; i < msg.getRecepient().size(); i++) {
 							values = new ContentValues(2);
 							values.put(DataProvider.COL_TYPE, MessageType.OUTGOING.ordinal());
-							values.put(DataProvider.COL_MESSAGE, msg.getMessage());
+							values.put(DataProvider.COL_MESSAGE, msg.getMessage().replaceFirst("\\{.*\\}", ""));
 							values.put(DataProvider.COL_RECEIVER_EMAIL, msg.getRecepient().get(i));
 							values.put(DataProvider.COL_SENDER_EMAIL, Common.getPreferredEmail());
 							values.put(DataProvider.COL_UUID, msg.getUuid());

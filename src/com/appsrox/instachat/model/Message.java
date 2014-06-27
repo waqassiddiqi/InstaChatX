@@ -6,7 +6,6 @@ package com.appsrox.instachat.model;
 import java.util.ArrayList;
 import java.util.List;
 
-// TODO: Auto-generated Javadoc
 /**
  * Describes a chat message containing information about sender, receiver
  * attachment and time to self destroy.

@@ -5,9 +5,13 @@ package com.appsrox.instachat;
 
 import java.util.List;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -21,6 +25,8 @@ import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.preference.RingtonePreference;
 import android.text.TextUtils;
+import android.view.MenuItem;
+
 
 // TODO: Auto-generated Javadoc
 /**
@@ -52,10 +58,27 @@ public class SettingsActivity extends PreferenceActivity {
 	 * @see android.app.Activity#onPostCreate(android.os.Bundle)
 	 */
 	@Override
+	@SuppressLint("InlinedApi")
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
 
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+			getActionBar().setDisplayHomeAsUpEnabled(true);
+			getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3483A1")));
+		}
+		
 		setupSimplePreferencesScreen();
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+
+		case android.R.id.home:
+			finish();
+			
+		}
+		return super.onOptionsItemSelected(item);
 	}
 
 	/**
