@@ -5,7 +5,7 @@ package com.appsrox.instachat.client;
 
 import java.io.File;
 
-// TODO: Auto-generated Javadoc
+
 /**
  * The Class Util.
  */
@@ -20,5 +20,7 @@ public class Util {
 	public static long getFileSize(String filePath) {
 		File f = new File(filePath);
 		return f.length() / 1024;
-	}	
+	}
+	
+	
 }

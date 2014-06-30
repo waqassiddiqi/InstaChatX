@@ -15,6 +15,7 @@
  */
 package com.appsrox.instachat.client;
 
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,7 +40,9 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
+import org.apache.http.entity.mime.content.ContentBody;
 import org.apache.http.entity.mime.content.FileBody;
+import org.apache.http.entity.mime.content.InputStreamBody;
 import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
@@ -48,6 +51,7 @@ import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.EntityUtils;
 
 import android.graphics.Bitmap;
+import android.graphics.Bitmap.CompressFormat;
 import android.graphics.BitmapFactory;
 import android.os.Environment;
 import android.util.Log;
@@ -259,10 +263,25 @@ public final class ServerUtilities {
 	    	MultipartEntityBuilder builder = MultipartEntityBuilder.create();    
 	    	builder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
 
+	    	
+	    	
 	    	//iterate through form fields and append them to POST request depending on type of field
 	        for(int index=0; index < nameValuePairs.size(); index++) {
 	            if(nameValuePairs.get(index).getName().equalsIgnoreCase("attachment")) {
-	            	builder.addPart(nameValuePairs.get(index).getName(), new FileBody(new File (nameValuePairs.get(index).getValue())));
+	            	
+	            	
+	            	if(Util.getFileSize(nameValuePairs.get(index).getValue()) >= 1024) {
+		            	Bitmap bmp = BitmapFactory.decodeFile(nameValuePairs.get(index).getValue());
+		            	ByteArrayOutputStream bos = new ByteArrayOutputStream();
+		            	bmp.compress(CompressFormat.PNG, 100, bos);
+		            	InputStream in = new ByteArrayInputStream(bos.toByteArray());
+		            	
+		            	ContentBody foto = new InputStreamBody(in, "image/png", "filename");
+		            	builder.addPart(nameValuePairs.get(index).getName(), foto);
+	            	} else {
+	            		builder.addPart(nameValuePairs.get(index).getName(), new FileBody(new File (nameValuePairs.get(index).getValue())));
+	            	}	            	
+	            	
 	            } else {
 	            	builder.addPart(nameValuePairs.get(index).getName(), new StringBody(nameValuePairs.get(index).getValue()));
 	            }

@@ -238,10 +238,10 @@ public class BroadcastActivity extends ActionBarActivity implements
 			protected String doInBackground(String... params) {
 				
 				//Return an error if filesize is greater than 1MB
-				if(Util.getFileSize(params[0]) >= 1024) {
-					errorMessage = "File is too large to be attached";
-					return null;
-				}
+				//if(Util.getFileSize(params[0]) >= 1024) {
+				//	errorMessage = "File is too large to be attached";
+				//	return null;
+				//}
 				
 				//upload attachment of GAE server and return remote path to attachment
 				return ServerUtilities.uplaod(params[0], params[1]);

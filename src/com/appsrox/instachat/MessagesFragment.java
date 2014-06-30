@@ -451,7 +451,10 @@ public class MessagesFragment extends ListFragment implements LoaderManager.Load
 			final String attachment = cursor.getString(cursor.getColumnIndex(DataProvider.COL_ATTACHMENT));
 			String messageId = cursor.getString(cursor.getColumnIndex(DataProvider.COL_UUID));
 						
-			MainActivity.photoCache.DisplayBitmap(requestPhoto(email), holder.avatar);
+			try {
+				MainActivity.photoCache.DisplayBitmap(requestPhoto(email), holder.avatar);
+			} catch (Exception e) { }
+			
 			
 			//In case if this message has an attachment
 			if(attachment != null && attachment.trim().length() > 0) {
