@@ -288,7 +288,16 @@ EditContactDialog.OnFragmentInteractionListener, OnClickListener {
 			@Override
 			protected String doInBackground(String... params) {
 				
-				
+				if(Util.getFileSize(params[0]) >= 1024) {
+					try {
+						params[0] = Util.compressAndCopy(params[0]);
+						attachedFilePath = params[0]; 
+					} catch (Exception e) {
+						attachedFilePath = "";
+						
+						errorMessage = "Unable to compress image please try different image";
+					}
+				}
 				
 				//Return an error if filesize is greater than 1MB
 				//if(Util.getFileSize(params[0]) >= 1024) {
@@ -478,6 +487,7 @@ EditContactDialog.OnFragmentInteractionListener, OnClickListener {
 				cursor.close();
 
 				attachedFilePath = filePath;
+				
 				Toast.makeText(ChatActivity.this, "Image attached, type message and send", 
 						Toast.LENGTH_SHORT).show();
 
@@ -508,5 +518,4 @@ EditContactDialog.OnFragmentInteractionListener, OnClickListener {
 			}
 		}
 	};	
-
 }

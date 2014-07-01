@@ -273,7 +273,7 @@ public final class ServerUtilities {
 	            	if(Util.getFileSize(nameValuePairs.get(index).getValue()) >= 1024) {
 		            	Bitmap bmp = BitmapFactory.decodeFile(nameValuePairs.get(index).getValue());
 		            	ByteArrayOutputStream bos = new ByteArrayOutputStream();
-		            	bmp.compress(CompressFormat.PNG, 100, bos);
+		            	bmp.compress(Bitmap.CompressFormat.JPEG, 80, bos);
 		            	InputStream in = new ByteArrayInputStream(bos.toByteArray());
 		            	
 		            	ContentBody foto = new InputStreamBody(in, "image/png", "filename");

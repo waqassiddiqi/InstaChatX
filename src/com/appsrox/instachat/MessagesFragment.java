@@ -54,6 +54,7 @@ import android.widget.Toast;
 import com.appsrox.instachat.client.ServerUtilities;
 import com.appsrox.instachat.model.Message;
 import com.google.gson.Gson;
+import com.squareup.picasso.Picasso;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -465,9 +466,23 @@ public class MessagesFragment extends ListFragment implements LoaderManager.Load
 					//Download attachment form GAE server
 					new DisplayAttachmentTask(attachment, messageId, holder.attachment, holder.imgViewAttachment).execute();
 					
+					//Picasso.with(context)
+					//  .load(attachment)
+					//  .resize(100, 100)
+					//  .centerCrop()
+					//  .into(holder.imgViewAttachment);
+					
 				} else if(isFileExists(attachment)) {
 					//If this is atatchment send by us, display image from local drive instead of downlaoding
+					
+					Picasso.with(context)
+					  .load(new File(attachment))
+					  .resize(100, 100)
+					  .centerCrop()
+					  .into(holder.imgViewAttachment);
+					
 					viewAttachment(attachment, holder.imgViewAttachment);
+					
 				} else {
 					holder.attachment.setVisibility(View.GONE);
 					holder.imgViewAttachment.setVisibility(View.GONE);
@@ -575,18 +590,18 @@ public class MessagesFragment extends ListFragment implements LoaderManager.Load
 	 */
 	private void viewAttachment(final String attachment, ImageView imgView) {
 		
-		Bitmap myBitmap = BitmapFactory.decodeFile(new File(attachment).getAbsolutePath());
-		imgView.setImageBitmap(myBitmap);
+		//Bitmap myBitmap = BitmapFactory.decodeFile(new File(attachment).getAbsolutePath());
+		//imgView.setImageBitmap(myBitmap);
 		
 		imgView.setVisibility(View.VISIBLE);
-		
+		imgView.setTag(attachment);
 		imgView.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent();
 				intent.setAction(android.content.Intent.ACTION_VIEW);
-				intent.setDataAndType(Uri.parse(attachment), "image/*");
+				intent.setDataAndType(Uri.fromFile(new File(v.getTag().toString())), "image/*");
 				
 				Intent chooser = Intent.createChooser(intent, "View attachment");
 				
@@ -668,9 +683,10 @@ public class MessagesFragment extends ListFragment implements LoaderManager.Load
 			if (path != null && !TextUtils.isEmpty(path)) {
 				textView.setText("Tap here to view attachement");
 				
+				Picasso.with(getActivity()).load(new File(path)).resize(100, 100).centerCrop().into(imgViewAttachment);
 
-				Bitmap myBitmap = BitmapFactory.decodeFile(new File(path).getAbsolutePath());
-				imgViewAttachment.setImageBitmap(myBitmap);
+				//Bitmap myBitmap = BitmapFactory.decodeFile(new File(path).getAbsolutePath());
+				//imgViewAttachment.setImageBitmap(myBitmap);
 				
 				textView.setVisibility(View.GONE);
 				
