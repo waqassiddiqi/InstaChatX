@@ -340,9 +340,17 @@ public final class ServerUtilities {
 			//Download file content from server
 			InputStream input = connection.getInputStream();
 			
+			BitmapFactory.Options options = new BitmapFactory.Options();
+			options.inJustDecodeBounds = true;
+			
 			//Construct new image file from downloaded content
-			Bitmap myBitmap = BitmapFactory.decodeStream(input);
-
+			Bitmap myBitmap = BitmapFactory.decodeStream(input, null, options);
+			
+			options.inSampleSize = Util.calculateInSampleSize(options, 1024, 786);			
+			options.inJustDecodeBounds = false;
+			
+			myBitmap = BitmapFactory.decodeStream(input, null, options);
+			
 			//Construct path on local SD card to save downloaded image
 			String path = Environment.getExternalStorageDirectory() + "/instaChat/" + filename + ".png";
 			
@@ -350,7 +358,7 @@ public final class ServerUtilities {
 			FileOutputStream stream = new FileOutputStream(path);
 
 			ByteArrayOutputStream outstream = new ByteArrayOutputStream();
-			myBitmap.compress(Bitmap.CompressFormat.JPEG, 85, outstream);
+			myBitmap.compress(Bitmap.CompressFormat.PNG, 85, outstream);
 			byte[] byteArray = outstream.toByteArray();
 
 			stream.write(byteArray);

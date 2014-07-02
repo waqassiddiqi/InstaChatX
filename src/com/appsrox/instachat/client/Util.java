@@ -4,16 +4,15 @@
 package com.appsrox.instachat.client;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Matrix;
-import android.graphics.RectF;
 import android.os.Environment;
+import android.util.DisplayMetrics;
+
+import com.appsrox.instachat.Common;
 
 
 /**
@@ -43,7 +42,14 @@ public class Util {
 		
 		compressRatio -= 10;
 		
-		Bitmap bitmap = BitmapFactory.decodeFile(filePath);
+		BitmapFactory.Options options = new BitmapFactory.Options();
+		options.inJustDecodeBounds = true;
+		
+		Bitmap bitmap = BitmapFactory.decodeFile(filePath, options);
+		options.inSampleSize = Util.calculateInSampleSize(options, 1024, 786);			
+		options.inJustDecodeBounds = false;
+		bitmap = BitmapFactory.decodeFile(filePath, options);
+		
 		FileOutputStream fOut = new FileOutputStream(compressedPictureFile);
         boolean compressed = bitmap.compress(Bitmap.CompressFormat.JPEG, compressRatio, fOut);
         
@@ -57,5 +63,29 @@ public class Util {
         fOut.close();
         
         return compressedPictureFile.getPath();
+	}
+	
+	public static int calculateInSampleSize(BitmapFactory.Options options,
+			int reqWidth, int reqHeight) {
+		// Raw height and width of image
+		final int height = options.outHeight;
+		final int width = options.outWidth;
+		int inSampleSize = 1;
+
+		if (height > reqHeight || width > reqWidth) {
+
+			final int halfHeight = height / 2;
+			final int halfWidth = width / 2;
+
+			// Calculate the largest inSampleSize value that is a power of 2 and
+			// keeps both
+			// height and width larger than the requested height and width.
+			while ((halfHeight / inSampleSize) > reqHeight
+					&& (halfWidth / inSampleSize) > reqWidth) {
+				inSampleSize *= 2;
+			}
+		}
+
+		return inSampleSize;
 	}
 }

@@ -12,6 +12,7 @@ import org.acra.annotation.ReportsCrashes;
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.app.Application;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Patterns;
@@ -49,6 +50,19 @@ public class Common extends Application {
 	/** The prefs. */
 	private static SharedPreferences prefs;
 
+	
+	/** Application instance **/
+	private static Common instance;
+	
+	
+	public Common() {
+		instance = this;
+	}
+	
+	public static Context getContext() {
+		return instance.getApplicationContext();
+	}
+	
 	/* (non-Javadoc)
 	 * @see android.app.Application#onCreate()
 	 */
